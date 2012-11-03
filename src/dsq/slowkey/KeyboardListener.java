@@ -1,6 +1,7 @@
 package dsq.slowkey;
 
 import android.inputmethodservice.InputMethodService;
+import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.KeyEvent;
 import android.view.inputmethod.InputConnection;
@@ -23,8 +24,12 @@ public class KeyboardListener implements KeyboardView.OnKeyboardActionListener {
 
     @Override
     public void onKey(final int primaryCode, final int[] keyCodes) {
-        final InputConnection conn = context.getCurrentInputConnection();
-        conn.commitText(String.valueOf((char) primaryCode), 1);
+        if (primaryCode == Keyboard.KEYCODE_DELETE) {
+            keyDownUp(KeyEvent.KEYCODE_DEL);
+        } else {
+            final InputConnection conn = context.getCurrentInputConnection();
+            conn.commitText(String.valueOf((char) primaryCode), 1);
+        }
     }
 
     @Override
