@@ -67,16 +67,4 @@ public class KeyboardListener implements KeyboardView.OnKeyboardActionListener {
     private KeyEvent key(final int action, final int keyEventCode) {
         return new KeyEvent(action, keyEventCode);
     }
-
-    /**
-     * Reused from android SoftKeyboard.
-     */
-//    private void sendKey(int keyCode) {
-//        if (keyCode >= '0' && keyCode <= '9') {
-//            keyDownUp(keyCode - '0' + KeyEvent.KEYCODE_0);
-//        } else {
-//            final InputConnection conn = service.getCurrentInputConnection();
-//            conn.commitText(String.valueOf((char) keyCode), 1);
-//        }
-//    }
 }

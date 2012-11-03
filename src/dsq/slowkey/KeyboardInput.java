@@ -47,9 +47,6 @@ public class KeyboardInput extends InputMethodService {
         view.closing();
     }
 
-    /**
-     * Deal with the editor reporting movement of its cursor.
-     */
     @Override public void onUpdateSelection(int oldSelStart, int oldSelEnd,
             int newSelStart, int newSelEnd, int candidatesStart, int candidatesEnd) {
 

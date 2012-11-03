@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab37b54-7173-4d6e-9954-dc845a8074cb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/values/dimen.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/binary.xml" afterPath="$PROJECT_DIR$/res/xml/binary.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slowkey.iws" afterPath="$PROJECT_DIR$/slowkey.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java" />
     </list>
     <ignored path="slowkey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +66,7 @@
       <file leaf-file-name="binary.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/xml/binary.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="250" selection-end="250" vertical-scroll-proportion="0.17006803">
+            <state line="13" column="23" selection-start="671" selection-end="671" vertical-scroll-proportion="0.44217688">
               <folding />
             </state>
           </provider>
@@ -73,7 +75,7 @@
       <file leaf-file-name="KeyboardInput.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="124" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
+            <state line="48" column="0" selection-start="0" selection-end="1727" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,7 +86,7 @@
       <file leaf-file-name="KeyboardListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="25" column="50" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +106,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="50" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="635" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +115,7 @@
       <file leaf-file-name="method.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/xml/method.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +124,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +133,7 @@
       <file leaf-file-name="keyboard.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/keyboard.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+            <state line="8" column="71" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,10 +142,19 @@
       <file leaf-file-name="SlowKeyboardView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="481" selection-end="580" vertical-scroll-proportion="0.0">
+            <state line="6" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proguard.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/proguard.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="12" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,15 +176,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/dsq/slowkey/Keyboard.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardView.java" />
-        <option value="$PROJECT_DIR$/res/layout/keyboard.xml" />
         <option value="$PROJECT_DIR$/res/xml/method.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/dimen.xml" />
+        <option value="$PROJECT_DIR$/res/xml/binary.xml" />
+        <option value="$PROJECT_DIR$/res/layout/keyboard.xml" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java" />
-        <option value="$PROJECT_DIR$/res/xml/binary.xml" />
       </list>
     </option>
   </component>
@@ -514,7 +525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="875" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -592,7 +603,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1369#0" expanded="true" />
+            <element signature="e#0#1133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,29 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/method.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="481" selection-end="580" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/android-sdk-linux/platforms/android-8/android.jar!/android/inputmethodservice/Keyboard.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="28" selection-start="576" selection-end="576" vertical-scroll-proportion="-7.8">
@@ -634,9 +622,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/proguard.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+        <state line="25" column="50" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -645,30 +656,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="124" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
+        <state line="48" column="0" selection-start="0" selection-end="1727" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="635" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/keyboard.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+        <state line="8" column="71" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/method.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/binary.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="250" selection-end="250" vertical-scroll-proportion="0.17006803">
+        <state line="13" column="23" selection-start="671" selection-end="671" vertical-scroll-proportion="0.44217688">
           <folding />
         </state>
       </provider>
