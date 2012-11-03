@@ -65,7 +65,7 @@
       <file leaf-file-name="binary.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/xml/binary.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="56" selection-start="478" selection-end="478" vertical-scroll-proportion="0.22058824">
+            <state line="11" column="104" selection-start="630" selection-end="630" vertical-scroll-proportion="0.37414965">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="KeyboardInput.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="5" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
+            <state line="42" column="124" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,7 +94,7 @@
       <file leaf-file-name="KeyboardListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="47" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+            <state line="13" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
       <file leaf-file-name="Keyboard.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///opt/android-sdk-linux/platforms/android-8/android.jar!/android/inputmethodservice/Keyboard.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="1188" selection-end="1188" vertical-scroll-proportion="-14.4">
+            <state line="14" column="28" selection-start="576" selection-end="576" vertical-scroll-proportion="-7.8">
               <folding />
             </state>
           </provider>
@@ -181,8 +181,8 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/dimen.xml" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/SlowKeyboardView.java" />
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java" />
         <option value="$PROJECT_DIR$/res/xml/binary.xml" />
       </list>
     </option>
@@ -307,6 +307,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slowkey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slowkey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slowkey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slowkey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,7 +528,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -570,7 +602,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#942#0" expanded="true" />
+            <element signature="e#0#1369#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -619,16 +651,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/keyboard.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///opt/android-sdk-linux/platforms/android-8/android.jar!/android/inputmethodservice/Keyboard.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="1188" selection-end="1188" vertical-scroll-proportion="-14.4">
+        <state line="14" column="28" selection-start="576" selection-end="576" vertical-scroll-proportion="-7.8">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="47" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+        <state line="13" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -637,23 +676,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/KeyboardInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="5" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
+        <state line="42" column="124" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/keyboard.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/binary.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="56" selection-start="478" selection-end="478" vertical-scroll-proportion="0.22058824">
+        <state line="11" column="104" selection-start="630" selection-end="630" vertical-scroll-proportion="0.37414965">
           <folding />
         </state>
       </provider>

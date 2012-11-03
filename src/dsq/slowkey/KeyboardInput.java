@@ -10,8 +10,7 @@ public class KeyboardInput extends InputMethodService {
     
     private Keyboard keyboard;
     private KeyboardView view;
-    private KeyboardView.OnKeyboardActionListener listener = new KeyboardListener(this);
-    
+
     @Override public void onCreate() {
         super.onCreate();
     }
@@ -43,6 +42,7 @@ public class KeyboardInput extends InputMethodService {
     @Override public void onStartInputView(EditorInfo attribute, boolean restarting) {
         super.onStartInputView(attribute, restarting);
         view.setKeyboard(keyboard);
+        final KeyboardListener listener = new KeyboardListener(this, view);
         view.setOnKeyboardActionListener(listener);
         view.closing();
     }
