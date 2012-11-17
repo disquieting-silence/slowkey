@@ -10,6 +10,7 @@ public class SpecialKeyCodes {
     public static final int TO_B3 = -7000;
     public static final int TO_B4 = -8000;
     public static final int TO_SYMBOL = -9000;
+    public static final int TO_NUMBER = -10000;
 
     public static final int TO_BINARY = -750;
     public static final int TO_BLUEPRINT = -500;

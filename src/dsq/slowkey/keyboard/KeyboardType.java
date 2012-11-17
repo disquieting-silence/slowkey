@@ -11,5 +11,6 @@ public enum KeyboardType {
     B2,
     B3,
     B4,
-    SYMBOL
+    SYMBOL,
+    NUMBER
 }
