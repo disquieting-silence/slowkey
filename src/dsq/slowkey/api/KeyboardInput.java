@@ -28,8 +28,13 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
         final Keyboard a2 = new Keyboard(this, R.xml.a2);
         final Keyboard a3 = new Keyboard(this, R.xml.a3);
         final Keyboard a4 = new Keyboard(this, R.xml.a4);
+        final Keyboard b1 = new Keyboard(this, R.xml.b1);
+        final Keyboard b2 = new Keyboard(this, R.xml.b2);
+        final Keyboard b3 = new Keyboard(this, R.xml.b3);
+        final Keyboard b4 = new Keyboard(this, R.xml.b4);
+
         final Keyboard blueprint = new Keyboard(this, R.xml.blueprint);
-        this.keyboards = new DefaultKeyboards(a1, a2, a3, a4, a1, a1, a1, a1, blueprint, binary);
+        this.keyboards = new DefaultKeyboards(a1, a2, a3, a4, b1, b2, b3, b4, blueprint, binary);
     }
 
     @Override public View onCreateInputView() {
