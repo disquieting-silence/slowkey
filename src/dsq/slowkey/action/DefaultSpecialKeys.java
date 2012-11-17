@@ -16,6 +16,7 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.TO_BINARY, new ShowBinaryKeyAction());
         mapping.put(SpecialKeyCodes.HTH, new TextKeyAction("hth"));
         mapping.put(SpecialKeyCodes.LOL, new TextKeyAction("lol"));
+        mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
     }
 
     @Override

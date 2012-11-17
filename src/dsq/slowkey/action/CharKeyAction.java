@@ -15,6 +15,8 @@ public class CharKeyAction implements KeyAction {
     @Override
     public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
         final InputConnection conn = service.getCurrentInputConnection();
-        conn.commitText(String.valueOf((char) code), 1);
+        final String character = String.valueOf((char) code);
+        final String value = keyboardSwitcher.isShifted() ? character.toUpperCase() : character;
+        conn.commitText(value, 1);
     }
 }

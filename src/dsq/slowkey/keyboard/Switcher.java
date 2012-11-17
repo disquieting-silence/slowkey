@@ -7,4 +7,6 @@ public interface Switcher {
     void prev();
     void toLol();
     void toBinary();
+    void toggleShifted();
+    boolean isShifted();
 }

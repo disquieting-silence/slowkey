@@ -13,4 +13,6 @@ public interface SlowKeyboardView  {
     View view();
 
     void setOnKeyboardActionListener(KeyboardListener listener);
+
+    void invalidateAllKeys();
 }

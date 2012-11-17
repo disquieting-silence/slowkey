@@ -1,7 +1,10 @@
 package dsq.slowkey.keyboard;
 
 import android.inputmethodservice.Keyboard;
+import android.util.Log;
 import dsq.slowkey.view.SlowKeyboardView;
+
+import java.util.List;
 
 public class DefaultSwitcher implements Switcher {
 
@@ -37,5 +40,35 @@ public class DefaultSwitcher implements Switcher {
     @Override
     public void toBinary() {
         view.setKeyboard(binaryKeyboard);
+    }
+    
+    private String conform(final CharSequence s, final boolean state) {
+        final String label = s.toString();
+        boolean isLetter = label.length() == 1;
+        if (isLetter && Character.isLowerCase(label.charAt(0)) && state) {
+            return label.toUpperCase();
+        } else if (isLetter && !Character.isLowerCase(label.charAt(0)) && !state) {
+            return label.toLowerCase();
+        } else {
+            return label;
+        }
+    }
+
+    @Override
+    public void toggleShifted() {
+        final Keyboard current = view.getKeyboard();
+        current.setShifted(!current.isShifted());
+        final boolean state = current.isShifted();
+        final List<Keyboard.Key> allKeys = current.getKeys();
+        for (Keyboard.Key k : allKeys) {
+            k.label = k.label != null ? conform(k.label, state) : k.label;
+        }
+        view.invalidateAllKeys();
+    }
+
+    @Override
+    public boolean isShifted() {
+        final Keyboard current = view.getKeyboard();
+        return current.isShifted();
     }
 }
