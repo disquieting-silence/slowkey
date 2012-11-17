@@ -19,7 +19,7 @@
     </Row>
     <Row>
         <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyEdgeFlags="left"/>
-        <Key android:codes="-3000" android:keyLabel=""/>
+        <Key android:codes="-9000" android:keyLabel="$ ( ) !"/>
         <Key android:codes="-3000" android:keyLabel=""/>
         <Key android:codes="-3000" android:keyLabel="" android:keyHeight="0px" android:keyEdgeFlags="right"/>
     </Row>
