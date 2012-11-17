@@ -1,4 +1,4 @@
-package dsq.slowkey;
+package dsq.slowkey.view;
 
 import android.content.Context;
 import android.inputmethodservice.KeyboardView;

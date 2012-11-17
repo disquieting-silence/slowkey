@@ -1,10 +1,12 @@
-package dsq.slowkey;
+package dsq.slowkey.api;
 
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import dsq.slowkey.KeyboardListener;
+import dsq.slowkey.R;
 
 public class KeyboardInput extends InputMethodService {
     
