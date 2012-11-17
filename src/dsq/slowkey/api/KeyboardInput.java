@@ -2,28 +2,36 @@ package dsq.slowkey.api;
 
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
+import dsq.slowkey.keyboard.DefaultSwitcher;
+import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
+
+import java.util.Arrays;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
     
-    private Keyboard keyboard;
+    private Keyboard binaryKeyboard;
+    private Keyboard lolKeyboard;
     private SlowKeyboardView view;
+    
+    private Switcher keyboardSwitcher;
 
     @Override public void onCreate() {
         super.onCreate();
     }
 
     @Override public void onInitializeInterface() {
-        keyboard = new Keyboard(this, R.xml.binary);
+        binaryKeyboard = new Keyboard(this, R.xml.binary);
+        lolKeyboard = new Keyboard(this, R.xml.lol);
     }
 
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        view.setKeyboard(keyboard);
+        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, lolKeyboard);
+        view.setKeyboard(binaryKeyboard);
         return view.view();
     }
 
@@ -42,8 +50,8 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
 
     @Override public void onStartInputView(EditorInfo attribute, boolean restarting) {
         super.onStartInputView(attribute, restarting);
-        view.setKeyboard(keyboard);
-        final KeyboardListener listener = new KeyboardListener(this, view);
+        view.setKeyboard(binaryKeyboard);
+        final KeyboardListener listener = new KeyboardListener(this, view, keyboardSwitcher);
         view.setOnKeyboardActionListener(listener);
         view.closing();
     }

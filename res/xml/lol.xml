@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-          android:keyWidth="25%p"
+          android:keyWidth="35%p"
           android:horizontalGap="0px"
           android:verticalGap="0px"
           android:keyHeight="100px"
         >
     <Row>
         <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="48" android:keyLabel="0"/>
-        <Key android:codes="49" android:keyLabel="1"/>
+        <Key android:codes="-2000" android:keyLabel="lol"/>
+        <Key android:codes="-2001" android:keyLabel="hth"/>
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-1000" android:keyWidth="100%p" android:keyLabel=" -- regress --"/>
+        <Key android:codes="-1001" android:keyWidth="100%p" android:keyLabel=" -- regress --"/>
     </Row>
 </Keyboard>

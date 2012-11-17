@@ -1,8 +1,6 @@
 package dsq.slowkey.action;
 
 import android.inputmethodservice.Keyboard;
-import dsq.slowkey.api.SlowInputMethodService;
-import dsq.slowkey.view.SlowKeyboardView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,12 +12,15 @@ public class DefaultSpecialKeys implements SpecialKeys {
     public DefaultSpecialKeys() {
         mapping.put(Keyboard.KEYCODE_DELETE, new BackspaceKeyAction());
         mapping.put(Keyboard.KEYCODE_CANCEL, new CancelKeyAction());
-        mapping.put(SpecialKeyCodes.TESTER, new TextKeyAction('y'));
+        mapping.put(SpecialKeyCodes.TO_LOL, new ShowLolKeyAction());
+        mapping.put(SpecialKeyCodes.TO_BINARY, new ShowBinaryKeyAction());
+        mapping.put(SpecialKeyCodes.HTH, new TextKeyAction("hth"));
+        mapping.put(SpecialKeyCodes.LOL, new TextKeyAction("lol"));
     }
 
     @Override
     public KeyAction interpret(final int code) {
         final KeyAction specialAction = mapping.get(code);
-        return specialAction != null ? specialAction : new TextKeyAction(code);
+        return specialAction != null ? specialAction : new CharKeyAction(code);
     }
 }

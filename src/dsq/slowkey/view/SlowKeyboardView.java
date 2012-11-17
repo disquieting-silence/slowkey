@@ -8,6 +8,7 @@ public interface SlowKeyboardView  {
     public void closing();
 
     void setKeyboard(Keyboard keyboard);
+    Keyboard getKeyboard();
 
     View view();
 

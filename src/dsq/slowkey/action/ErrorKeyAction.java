@@ -1,6 +1,7 @@
 package dsq.slowkey.action;
 
 import dsq.slowkey.api.SlowInputMethodService;
+import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class ErrorKeyAction implements KeyAction {
@@ -11,7 +12,7 @@ public class ErrorKeyAction implements KeyAction {
     }
 
     @Override
-    public void run(final SlowInputMethodService service, final SlowKeyboardView view) {
+    public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
         throw new RuntimeException(message);
     }
 }

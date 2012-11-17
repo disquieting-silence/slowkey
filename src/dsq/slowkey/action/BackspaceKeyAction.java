@@ -3,11 +3,12 @@ package dsq.slowkey.action;
 import android.view.KeyEvent;
 import android.view.inputmethod.InputConnection;
 import dsq.slowkey.api.SlowInputMethodService;
+import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class BackspaceKeyAction implements KeyAction {
     @Override
-    public void run(final SlowInputMethodService service, final SlowKeyboardView view) {
+    public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
         keyDownUp(service, KeyEvent.KEYCODE_DEL);
     }
 
