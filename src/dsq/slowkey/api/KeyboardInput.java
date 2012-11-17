@@ -9,13 +9,11 @@ import dsq.slowkey.keyboard.DefaultSwitcher;
 import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
-import java.util.Arrays;
-
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
     
     private Keyboard binaryKeyboard;
-    private Keyboard lolKeyboard;
     private Keyboard blueprintKeyboard;
+    private Keyboard a1Keyboard;
     private SlowKeyboardView view;
     
     private Switcher keyboardSwitcher;
@@ -26,14 +24,14 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
 
     @Override public void onInitializeInterface() {
         binaryKeyboard = new Keyboard(this, R.xml.binary);
-        lolKeyboard = new Keyboard(this, R.xml.lol);
+        a1Keyboard = new Keyboard(this, R.xml.a1);
         blueprintKeyboard = new Keyboard(this, R.xml.blueprint);
     }
 
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, lolKeyboard, blueprintKeyboard);
-        view.setKeyboard(binaryKeyboard);
+        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, a1Keyboard, blueprintKeyboard);
+        view.setKeyboard(a1Keyboard);
         return view.view();
     }
 

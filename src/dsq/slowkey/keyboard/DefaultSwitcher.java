@@ -1,7 +1,6 @@
 package dsq.slowkey.keyboard;
 
 import android.inputmethodservice.Keyboard;
-import android.util.Log;
 import dsq.slowkey.view.SlowKeyboardView;
 
 import java.util.List;
@@ -10,40 +9,45 @@ public class DefaultSwitcher implements Switcher {
 
     private final SlowKeyboardView view;
     private final Keyboard binaryKeyboard;
-    private final Keyboard lolKeyboard;
+    private final Keyboard a1Keyboard;
     private final Keyboard blueprintKeyboard;
     
-    public DefaultSwitcher(final SlowKeyboardView view, final Keyboard binaryKeyboard, final Keyboard lolKeyboard, final Keyboard blueprintKeyboard) {
+    public DefaultSwitcher(final SlowKeyboardView view, final Keyboard binaryKeyboard, final Keyboard a1Keyboard, final Keyboard blueprintKeyboard) {
         this.view = view;
         this.binaryKeyboard = binaryKeyboard;
-        this.lolKeyboard = lolKeyboard;
+        this.a1Keyboard = a1Keyboard;
         this.blueprintKeyboard = blueprintKeyboard;
     }
 
     @Override
     public void next() {
         final Keyboard current = view.getKeyboard();
-        final Keyboard now = (current == binaryKeyboard) ? lolKeyboard : binaryKeyboard;
+        final Keyboard now = (current == binaryKeyboard) ? a1Keyboard : binaryKeyboard;
         view.setKeyboard(now);
     }
 
     @Override
     public void prev() {
         final Keyboard current = view.getKeyboard();
-        final Keyboard now = (current == binaryKeyboard) ? lolKeyboard : binaryKeyboard;
+        final Keyboard now = (current == binaryKeyboard) ? a1Keyboard : binaryKeyboard;
         view.setKeyboard(now);
     }
 
     @Override
-    public void toLol() {
-        view.setKeyboard(blueprintKeyboard);
+    public void toA1() {
+        view.setKeyboard(a1Keyboard);
     }
 
     @Override
     public void toBinary() {
         view.setKeyboard(binaryKeyboard);
     }
-    
+
+    @Override
+    public void toBlueprint() {
+        view.setKeyboard(blueprintKeyboard);
+    }
+
     private String conform(final CharSequence s, final boolean state) {
         final String label = s.toString();
         boolean isLetter = label.length() == 1;

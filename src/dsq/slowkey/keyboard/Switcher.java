@@ -5,8 +5,9 @@ import android.inputmethodservice.Keyboard;
 public interface Switcher {
     void next();
     void prev();
-    void toLol();
+    void toA1();
     void toBinary();
+    void toBlueprint();
     void toggleShifted();
     boolean isShifted();
 }

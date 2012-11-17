@@ -12,11 +12,12 @@ public class DefaultSpecialKeys implements SpecialKeys {
     public DefaultSpecialKeys() {
         mapping.put(Keyboard.KEYCODE_DELETE, new BackspaceKeyAction());
         mapping.put(Keyboard.KEYCODE_CANCEL, new CancelKeyAction());
-        mapping.put(SpecialKeyCodes.TO_LOL, new ShowLolKeyAction());
+        mapping.put(SpecialKeyCodes.TO_A1, new ShowLolKeyAction());
         mapping.put(SpecialKeyCodes.TO_BINARY, new ShowBinaryKeyAction());
         mapping.put(SpecialKeyCodes.HTH, new TextKeyAction("hth"));
         mapping.put(SpecialKeyCodes.LOL, new TextKeyAction("lol"));
         mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
+        mapping.put(SpecialKeyCodes.TO_BLUEPRINT, new ShowBlueprintKeyAction());
     }
 
     @Override

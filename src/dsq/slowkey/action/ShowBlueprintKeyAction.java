@@ -4,9 +4,9 @@ import dsq.slowkey.api.SlowInputMethodService;
 import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
-public class ShowLolKeyAction implements KeyAction {
+public class ShowBlueprintKeyAction implements KeyAction {
     @Override
     public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
-        keyboardSwitcher.toA1();
+        keyboardSwitcher.toBlueprint();
     }
 }
