@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<dsq.slowkey.view.SlowKeyboardView
+<dsq.slowkey.view.DefaultSlowKeyboardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/keyboard"
         android:layout_alignParentBottom="true"

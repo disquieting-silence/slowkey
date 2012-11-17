@@ -1,15 +1,15 @@
 package dsq.slowkey.view;
 
-import android.content.Context;
-import android.inputmethodservice.KeyboardView;
-import android.util.AttributeSet;
+import android.inputmethodservice.Keyboard;
+import android.view.View;
+import dsq.slowkey.api.KeyboardListener;
 
-public class SlowKeyboardView extends KeyboardView {
-    public SlowKeyboardView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-    }
+public interface SlowKeyboardView  {
+    public void closing();
 
-    public SlowKeyboardView(final Context context, final AttributeSet attrs, final int defStyle) {
-        super(context, attrs, defStyle);
-    }
+    void setKeyboard(Keyboard keyboard);
+
+    View view();
+
+    void setOnKeyboardActionListener(KeyboardListener listener);
 }

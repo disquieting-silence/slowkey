@@ -5,13 +5,13 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import dsq.slowkey.KeyboardListener;
 import dsq.slowkey.R;
+import dsq.slowkey.view.SlowKeyboardView;
 
-public class KeyboardInput extends InputMethodService {
+public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
     
     private Keyboard keyboard;
-    private KeyboardView view;
+    private SlowKeyboardView view;
 
     @Override public void onCreate() {
         super.onCreate();
@@ -22,10 +22,9 @@ public class KeyboardInput extends InputMethodService {
     }
 
     @Override public View onCreateInputView() {
-        view = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
+        view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
         view.setKeyboard(keyboard);
-
-        return view;
+        return view.view();
     }
 
     @Override public View onCreateCandidatesView() {
