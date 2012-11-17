@@ -5,15 +5,15 @@ import android.inputmethodservice.Keyboard;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
+import dsq.slowkey.keyboard.DefaultKeyboards;
 import dsq.slowkey.keyboard.DefaultSwitcher;
+import dsq.slowkey.keyboard.Keyboards;
 import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
     
-    private Keyboard binaryKeyboard;
-    private Keyboard blueprintKeyboard;
-    private Keyboard a1Keyboard;
+    private Keyboards keyboards;
     private SlowKeyboardView view;
     
     private Switcher keyboardSwitcher;
@@ -23,15 +23,19 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     }
 
     @Override public void onInitializeInterface() {
-        binaryKeyboard = new Keyboard(this, R.xml.binary);
-        a1Keyboard = new Keyboard(this, R.xml.a1);
-        blueprintKeyboard = new Keyboard(this, R.xml.blueprint);
+        final Keyboard binary = new Keyboard(this, R.xml.binary);
+        final Keyboard a1 = new Keyboard(this, R.xml.a1);
+        final Keyboard a2 = new Keyboard(this, R.xml.a2);
+        final Keyboard a3 = new Keyboard(this, R.xml.a3);
+        final Keyboard a4 = new Keyboard(this, R.xml.a4);
+        final Keyboard blueprint = new Keyboard(this, R.xml.blueprint);
+        this.keyboards = new DefaultKeyboards(a1, a2, a3, a4, a1, a1, a1, a1, blueprint, binary);
     }
 
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, a1Keyboard, blueprintKeyboard);
-        view.setKeyboard(a1Keyboard);
+        keyboardSwitcher = new DefaultSwitcher(view, keyboards);
+        view.setKeyboard(keyboards.first());
         return view.view();
     }
 
@@ -50,7 +54,6 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
 
     @Override public void onStartInputView(EditorInfo attribute, boolean restarting) {
         super.onStartInputView(attribute, restarting);
-        view.setKeyboard(binaryKeyboard);
         final KeyboardListener listener = new KeyboardListener(this, view, keyboardSwitcher);
         view.setOnKeyboardActionListener(listener);
         view.closing();

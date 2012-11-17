@@ -8,44 +8,11 @@ import java.util.List;
 public class DefaultSwitcher implements Switcher {
 
     private final SlowKeyboardView view;
-    private final Keyboard binaryKeyboard;
-    private final Keyboard a1Keyboard;
-    private final Keyboard blueprintKeyboard;
+    private final Keyboards keyboards;
     
-    public DefaultSwitcher(final SlowKeyboardView view, final Keyboard binaryKeyboard, final Keyboard a1Keyboard, final Keyboard blueprintKeyboard) {
+    public DefaultSwitcher(final SlowKeyboardView view, final Keyboards keyboards) {
         this.view = view;
-        this.binaryKeyboard = binaryKeyboard;
-        this.a1Keyboard = a1Keyboard;
-        this.blueprintKeyboard = blueprintKeyboard;
-    }
-
-    @Override
-    public void next() {
-        final Keyboard current = view.getKeyboard();
-        final Keyboard now = (current == binaryKeyboard) ? a1Keyboard : binaryKeyboard;
-        view.setKeyboard(now);
-    }
-
-    @Override
-    public void prev() {
-        final Keyboard current = view.getKeyboard();
-        final Keyboard now = (current == binaryKeyboard) ? a1Keyboard : binaryKeyboard;
-        view.setKeyboard(now);
-    }
-
-    @Override
-    public void toA1() {
-        view.setKeyboard(a1Keyboard);
-    }
-
-    @Override
-    public void toBinary() {
-        view.setKeyboard(binaryKeyboard);
-    }
-
-    @Override
-    public void toBlueprint() {
-        view.setKeyboard(blueprintKeyboard);
+        this.keyboards = keyboards;
     }
 
     private String conform(final CharSequence s, final boolean state) {
@@ -58,6 +25,12 @@ public class DefaultSwitcher implements Switcher {
         } else {
             return label;
         }
+    }
+
+    @Override
+    public void toKeyboard(final KeyboardType type) {
+        Keyboard next = keyboards.get(type);
+        view.setKeyboard(next);
     }
 
     @Override

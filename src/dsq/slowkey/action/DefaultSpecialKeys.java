@@ -1,9 +1,12 @@
 package dsq.slowkey.action;
 
 import android.inputmethodservice.Keyboard;
+import dsq.slowkey.keyboard.KeyboardType;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static dsq.slowkey.keyboard.KeyboardType.*;
 
 public class DefaultSpecialKeys implements SpecialKeys {
 
@@ -12,12 +15,17 @@ public class DefaultSpecialKeys implements SpecialKeys {
     public DefaultSpecialKeys() {
         mapping.put(Keyboard.KEYCODE_DELETE, new BackspaceKeyAction());
         mapping.put(Keyboard.KEYCODE_CANCEL, new CancelKeyAction());
-        mapping.put(SpecialKeyCodes.TO_A1, new ShowLolKeyAction());
-        mapping.put(SpecialKeyCodes.TO_BINARY, new ShowBinaryKeyAction());
-        mapping.put(SpecialKeyCodes.HTH, new TextKeyAction("hth"));
-        mapping.put(SpecialKeyCodes.LOL, new TextKeyAction("lol"));
         mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
-        mapping.put(SpecialKeyCodes.TO_BLUEPRINT, new ShowBlueprintKeyAction());
+        mapping.put(SpecialKeyCodes.TO_A1, new ShowKeyboardKeyAction(A1));
+        mapping.put(SpecialKeyCodes.TO_A2, new ShowKeyboardKeyAction(A2));
+        mapping.put(SpecialKeyCodes.TO_A3, new ShowKeyboardKeyAction(A3));
+        mapping.put(SpecialKeyCodes.TO_A4, new ShowKeyboardKeyAction(A4));
+        mapping.put(SpecialKeyCodes.TO_B1, new ShowKeyboardKeyAction(B1));
+        mapping.put(SpecialKeyCodes.TO_B2, new ShowKeyboardKeyAction(B2));
+        mapping.put(SpecialKeyCodes.TO_B3, new ShowKeyboardKeyAction(B3));
+        mapping.put(SpecialKeyCodes.TO_B4, new ShowKeyboardKeyAction(B4));
+        mapping.put(SpecialKeyCodes.TO_BINARY, new ShowKeyboardKeyAction(BINARY));
+        mapping.put(SpecialKeyCodes.TO_BLUEPRINT, new ShowKeyboardKeyAction(BLUEPRINT));
     }
 
     @Override
