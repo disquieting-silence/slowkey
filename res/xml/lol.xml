@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-          android:keyWidth="35%p"
+          android:keyWidth="16%p"
           android:horizontalGap="0px"
           android:verticalGap="0px"
-          android:keyHeight="100px"
+          android:keyHeight="75px"
         >
     <Row>
-        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="-2000" android:keyLabel="lol"/>
-        <Key android:codes="-2001" android:keyLabel="hth"/>
-        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="113" android:keyLabel="q"/>
+        <Key android:codes="119" android:keyLabel="w"/>
+        <Key android:codes="101" android:keyLabel="e"/>
+        <Key android:codes="114" android:keyLabel="r"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-1001" android:keyWidth="100%p" android:keyLabel=" -- regress --"/>
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="a"/>
+        <Key android:codes="115" android:keyLabel="s"/>
+        <Key android:codes="100" android:keyLabel="d"/>
+        <Key android:codes="102" android:keyLabel="f"/>
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="44" android:keyLabel=","/>
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="64%p" android:isRepeatable="true"/>
+        <Key android:codes="46" android:keyLabel="."/>
     </Row>
 </Keyboard>
