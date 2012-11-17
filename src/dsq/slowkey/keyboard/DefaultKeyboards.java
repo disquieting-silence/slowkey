@@ -23,7 +23,8 @@ public class DefaultKeyboards implements Keyboards {
         final Keyboard blueprint,
         final Keyboard binary,
         final Keyboard symbol,
-        final Keyboard number
+        final Keyboard number,
+        final Keyboard navigation
     ) {
         mapping.put(A1, a1);
         mapping.put(A2, a2);
@@ -37,6 +38,7 @@ public class DefaultKeyboards implements Keyboards {
         mapping.put(BLUEPRINT, blueprint);
         mapping.put(SYMBOL, symbol);
         mapping.put(NUMBER, number);
+        mapping.put(NAVIGATION, navigation);
     }
     
     @Override

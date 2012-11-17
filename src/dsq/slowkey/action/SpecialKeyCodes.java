@@ -11,7 +11,13 @@ public class SpecialKeyCodes {
     public static final int TO_B4 = -8000;
     public static final int TO_SYMBOL = -9000;
     public static final int TO_NUMBER = -10000;
+    public static final int TO_NAV = -11000;
 
     public static final int TO_BINARY = -750;
     public static final int TO_BLUEPRINT = -500;
+
+    public static final int LEFT = -1100;
+    public static final int RIGHT = -1101;
+    public static final int UP = -1102;
+    public static final int DOWN = -1103;
 }

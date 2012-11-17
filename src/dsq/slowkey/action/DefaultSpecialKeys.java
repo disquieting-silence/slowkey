@@ -1,6 +1,7 @@
 package dsq.slowkey.action;
 
 import android.inputmethodservice.Keyboard;
+import android.view.KeyEvent;
 import dsq.slowkey.keyboard.KeyboardType;
 
 import java.util.HashMap;
@@ -13,7 +14,11 @@ public class DefaultSpecialKeys implements SpecialKeys {
     private final Map<Integer, KeyAction> mapping = new HashMap<Integer, KeyAction>();
 
     public DefaultSpecialKeys() {
-        mapping.put(Keyboard.KEYCODE_DELETE, new BackspaceKeyAction());
+        mapping.put(Keyboard.KEYCODE_DELETE, new KeycodeKeyAction(KeyEvent.KEYCODE_DEL));
+        mapping.put(SpecialKeyCodes.LEFT, new KeycodeKeyAction(KeyEvent.KEYCODE_DPAD_LEFT));
+        mapping.put(SpecialKeyCodes.RIGHT, new KeycodeKeyAction(KeyEvent.KEYCODE_DPAD_RIGHT));
+        mapping.put(SpecialKeyCodes.UP, new KeycodeKeyAction(KeyEvent.KEYCODE_DPAD_UP));
+        mapping.put(SpecialKeyCodes.DOWN, new KeycodeKeyAction(KeyEvent.KEYCODE_DPAD_DOWN));
         mapping.put(Keyboard.KEYCODE_CANCEL, new CancelKeyAction());
         mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
         mapping.put(SpecialKeyCodes.TO_A1, new ShowKeyboardKeyAction(A1));
@@ -28,6 +33,7 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.TO_BLUEPRINT, new ShowKeyboardKeyAction(BLUEPRINT));
         mapping.put(SpecialKeyCodes.TO_SYMBOL, new ShowKeyboardKeyAction(SYMBOL));
         mapping.put(SpecialKeyCodes.TO_NUMBER, new ShowKeyboardKeyAction(NUMBER));
+        mapping.put(SpecialKeyCodes.TO_NAV, new ShowKeyboardKeyAction(NAVIGATION));
     }
 
     @Override
