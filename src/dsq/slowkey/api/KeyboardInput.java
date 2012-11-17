@@ -15,6 +15,7 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     
     private Keyboard binaryKeyboard;
     private Keyboard lolKeyboard;
+    private Keyboard blueprintKeyboard;
     private SlowKeyboardView view;
     
     private Switcher keyboardSwitcher;
@@ -26,11 +27,12 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     @Override public void onInitializeInterface() {
         binaryKeyboard = new Keyboard(this, R.xml.binary);
         lolKeyboard = new Keyboard(this, R.xml.lol);
+        blueprintKeyboard = new Keyboard(this, R.xml.blueprint);
     }
 
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, lolKeyboard);
+        keyboardSwitcher = new DefaultSwitcher(view, binaryKeyboard, lolKeyboard, blueprintKeyboard);
         view.setKeyboard(binaryKeyboard);
         return view.view();
     }

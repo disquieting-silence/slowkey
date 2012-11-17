@@ -11,11 +11,13 @@ public class DefaultSwitcher implements Switcher {
     private final SlowKeyboardView view;
     private final Keyboard binaryKeyboard;
     private final Keyboard lolKeyboard;
+    private final Keyboard blueprintKeyboard;
     
-    public DefaultSwitcher(final SlowKeyboardView view, final Keyboard binaryKeyboard, final Keyboard lolKeyboard) {
+    public DefaultSwitcher(final SlowKeyboardView view, final Keyboard binaryKeyboard, final Keyboard lolKeyboard, final Keyboard blueprintKeyboard) {
         this.view = view;
         this.binaryKeyboard = binaryKeyboard;
         this.lolKeyboard = lolKeyboard;
+        this.blueprintKeyboard = blueprintKeyboard;
     }
 
     @Override
@@ -34,7 +36,7 @@ public class DefaultSwitcher implements Switcher {
 
     @Override
     public void toLol() {
-        view.setKeyboard(lolKeyboard);
+        view.setKeyboard(blueprintKeyboard);
     }
 
     @Override
