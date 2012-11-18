@@ -49,7 +49,7 @@ Using `slowkey`
 
 Using `slowkey` requires a lot of practice and a strong resistance (borderline immunity) to RSI. The basic rundown is as follows:
 
-* The keyboard is sector-driven. A small number of keys are available in each sector.
+* The keyboard is sector-driven. A small number of keys is available in each sector.
 * The `MOVE` key is used to navigate back to the sector selection menu. No other sector provides the ability to switch directly to another sector.
 * Each alphabet sector contains six letters. These letters approximate a section of the `qwerty` keyboard.
 * The `navigation` menu is used for moving the cursor through text. It is quite possibly the only improvement on the regular Android keyboard.
