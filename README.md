@@ -58,4 +58,4 @@ Using `slowkey` requires a lot of practice and a strong resistance (borderline i
 Screenshots
 -----------
 
-![Demo screenshot](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/main.png)
+![Demo screenshot](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/main_small.png)
