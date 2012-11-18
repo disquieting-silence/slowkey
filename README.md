@@ -58,4 +58,6 @@ Using `slowkey` requires a lot of practice and a strong resistance (borderline i
 Screenshots
 -----------
 
-![Demo screenshot](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/main_small.png)
+![Sector Selection](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/main_small.png) ![Q Sector](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/qrow_small.png) ![J Sector](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/jrow_small.png)
+
+![Number Sector](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/number_small.png) ![Symbol Sector](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/symbol_small.png) ![Navigation Sector](https://github.com/disquieting-silence/slowkey/raw/master/screenshots/navigation_small.png)
