@@ -55,6 +55,12 @@ Using `slowkey` requires a lot of practice and a strong resistance (borderline i
 * The `navigation` menu is used for moving the cursor through text. It is quite possibly the only improvement on the regular Android keyboard.
 * Many, many common characters are just not available anywhere. The small number of buttons on each screen provides certain constraints for layout. At this stage, the sector breakdown is quite arbitrary. Continued use (hypothetically) would drive out better sector identification.
 
+Known Issues
+------------
+
+* Most of it.
+* The Shift key doesn't go off after pressing a letter. This grows beyond frustrating very quickly. Shift key behaviour is still uncertain.
+
 Screenshots
 -----------
 
