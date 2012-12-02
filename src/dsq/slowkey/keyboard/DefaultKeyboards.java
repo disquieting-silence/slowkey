@@ -24,7 +24,10 @@ public class DefaultKeyboards implements Keyboards {
         final Keyboard binary,
         final Keyboard symbol,
         final Keyboard number,
-        final Keyboard navigation
+        final Keyboard navigation,
+        final Keyboard colemak0,
+        final Keyboard colemak1,
+        final Keyboard colemak2
     ) {
         mapping.put(A1, a1);
         mapping.put(A2, a2);
@@ -39,6 +42,9 @@ public class DefaultKeyboards implements Keyboards {
         mapping.put(SYMBOL, symbol);
         mapping.put(NUMBER, number);
         mapping.put(NAVIGATION, navigation);
+        mapping.put(COLEMAK0, colemak0);
+        mapping.put(COLEMAK1, colemak1);
+        mapping.put(COLEMAK2, colemak2);
     }
     
     @Override
@@ -50,6 +56,6 @@ public class DefaultKeyboards implements Keyboards {
 
     @Override
     public Keyboard first() {
-        return get(BLUEPRINT);
+        return get(COLEMAK1);
     }
 }

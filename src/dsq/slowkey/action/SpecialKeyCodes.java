@@ -12,6 +12,9 @@ public class SpecialKeyCodes {
     public static final int TO_SYMBOL = -9000;
     public static final int TO_NUMBER = -10000;
     public static final int TO_NAV = -11000;
+    public static final int TO_COLEMAK0 = -12000;
+    public static final int TO_COLEMAK1 = -13000;
+    public static final int TO_COLEMAK2 = -14000;
 
     public static final int TO_BINARY = -750;
     public static final int TO_BLUEPRINT = -500;

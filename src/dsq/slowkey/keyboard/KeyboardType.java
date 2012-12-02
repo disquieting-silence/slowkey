@@ -13,5 +13,8 @@ public enum KeyboardType {
     B4,
     SYMBOL,
     NUMBER,
-    NAVIGATION
+    NAVIGATION,
+    COLEMAK0,
+    COLEMAK1,
+    COLEMAK2
 }
