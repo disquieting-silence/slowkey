@@ -3,5 +3,5 @@ proguard*
 local.properties
 /out
 /gen
-sedition.iws
+/slowkey.iws
 
