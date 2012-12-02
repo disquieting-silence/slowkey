@@ -15,13 +15,13 @@
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-14000" android:keyLabel="&lt;&lt;" android:keyEdgeFlags="left"/>
+        <Key android:codes="-13000" android:keyLabel="&lt;&lt;" android:keyEdgeFlags="left"/>
         <Key android:codes="102" android:keyLabel="f"/>
         <Key android:codes="103" android:keyLabel="g"/>
         <Key android:codes="106" android:keyLabel="j"/>
         <Key android:codes="108" android:keyLabel="l"/>
         <Key android:codes="59" android:keyLabel=";"/>
-        <Key android:codes="-13000" android:keyLabel="&gt;&gt;" android:keyEdgeFlags="right"/>
+        <Key android:codes="-14000" android:keyLabel="&gt;&gt;" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="-500" android:keyLabel="MOVE" android:keyEdgeFlags="left"/>
