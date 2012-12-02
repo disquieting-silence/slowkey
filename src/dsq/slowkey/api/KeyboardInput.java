@@ -5,10 +5,7 @@ import android.inputmethodservice.Keyboard;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
-import dsq.slowkey.keyboard.DefaultKeyboards;
-import dsq.slowkey.keyboard.DefaultSwitcher;
-import dsq.slowkey.keyboard.Keyboards;
-import dsq.slowkey.keyboard.Switcher;
+import dsq.slowkey.keyboard.*;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
@@ -23,24 +20,7 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     }
 
     @Override public void onInitializeInterface() {
-        final Keyboard binary = new Keyboard(this, R.xml.binary);
-        final Keyboard a1 = new Keyboard(this, R.xml.a1);
-        final Keyboard a2 = new Keyboard(this, R.xml.a2);
-        final Keyboard a3 = new Keyboard(this, R.xml.a3);
-        final Keyboard a4 = new Keyboard(this, R.xml.a4);
-        final Keyboard b1 = new Keyboard(this, R.xml.b1);
-        final Keyboard b2 = new Keyboard(this, R.xml.b2);
-        final Keyboard b3 = new Keyboard(this, R.xml.b3);
-        final Keyboard b4 = new Keyboard(this, R.xml.b4);
-        final Keyboard symbol = new Keyboard(this, R.xml.symbol);
-        final Keyboard number = new Keyboard(this, R.xml.number);
-        final Keyboard navigation = new Keyboard(this, R.xml.navigation);
-        final Keyboard colemak0 = new Keyboard(this, R.xml.colemak0);
-        final Keyboard colemak1 = new Keyboard(this, R.xml.colemak1);
-        final Keyboard colemak2 = new Keyboard(this, R.xml.colemak2);
-
-        final Keyboard blueprint = new Keyboard(this, R.xml.blueprint);
-        this.keyboards = new DefaultKeyboards(a1, a2, a3, a4, b1, b2, b3, b4, blueprint, binary, symbol, number, navigation, colemak0, colemak1, colemak2);
+        this.keyboards = new ColemakKeyboards(this);
     }
 
     @Override public View onCreateInputView() {

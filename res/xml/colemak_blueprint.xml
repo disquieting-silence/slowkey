@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+          android:keyWidth="25%p"
+          android:horizontalGap="0px"
+          android:verticalGap="0px"
+          android:keyHeight="75px"
+        >
+    <Row>
+        <Key android:codes="-1000" android:keyLabel="" android:keyHeight="0px" android:keyEdgeFlags="left"/>
+        <Key android:codes="-12000" android:keyLabel="North Keys"/>
+        <Key android:codes="-13000" android:keyLabel="Home Keys"/>
+        <Key android:codes="-14000" android:keyLabel="South Keys" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" android:keyEdgeFlags="left"/>
+        <Key android:codes="-9000" android:keyLabel="$ ( ) !"/>
+        <Key android:codes="-10000" android:keyLabel="0 ... 9"/>
+        <Key android:codes="-11000" android:keyLabel="\u2194" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

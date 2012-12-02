@@ -1,43 +1,27 @@
 package dsq.slowkey.keyboard;
 
+import android.content.Context;
 import android.inputmethodservice.Keyboard;
+import dsq.slowkey.R;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static dsq.slowkey.keyboard.KeyboardType.*;
 
-public class DefaultKeyboards implements Keyboards {
-    
+public class ColemakKeyboards implements Keyboards {
+
     private final Map<KeyboardType, Keyboard> mapping = new HashMap<KeyboardType, Keyboard>();
-    
-    public DefaultKeyboards(
-        final Keyboard a1,
-        final Keyboard a2,
-        final Keyboard a3,
-        final Keyboard a4,
-        final Keyboard b1,
-        final Keyboard b2,
-        final Keyboard b3,
-        final Keyboard b4,
-        final Keyboard blueprint,
-        final Keyboard binary,
-        final Keyboard symbol,
-        final Keyboard number,
-        final Keyboard navigation,
-        final Keyboard colemak0,
-        final Keyboard colemak1,
-        final Keyboard colemak2
-    ) {
-        mapping.put(A1, a1);
-        mapping.put(A2, a2);
-        mapping.put(A3, a3);
-        mapping.put(A4, a4);
-        mapping.put(B1, b1);
-        mapping.put(B2, b2);
-        mapping.put(B3, b3);
-        mapping.put(B4, b4);
-        mapping.put(BINARY, binary);
+
+    public ColemakKeyboards(final Context context) {
+        final Keyboard symbol = new Keyboard(context, R.xml.symbol);
+        final Keyboard number = new Keyboard(context, R.xml.number);
+        final Keyboard navigation = new Keyboard(context, R.xml.navigation);
+        final Keyboard colemak0 = new Keyboard(context, R.xml.colemak0);
+        final Keyboard colemak1 = new Keyboard(context, R.xml.colemak1);
+        final Keyboard colemak2 = new Keyboard(context, R.xml.colemak2);
+
+        final Keyboard blueprint = new Keyboard(context, R.xml.colemak_blueprint);
         mapping.put(BLUEPRINT, blueprint);
         mapping.put(SYMBOL, symbol);
         mapping.put(NUMBER, number);
