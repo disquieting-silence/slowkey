@@ -18,7 +18,7 @@ public class ColemakKeyboards implements Keyboards {
         final Keyboard number = new Keyboard(context, R.xml.number);
         final Keyboard navigation = new Keyboard(context, R.xml.navigation);
         final Keyboard colemak0 = new Keyboard(context, R.xml.colemak0);
-        final Keyboard colemak1 = new Keyboard(context, R.xml.colemak1);
+        final Keyboard colemak1 = new Keyboard(context, R.xml.colemak_alpha);
         final Keyboard colemak2 = new Keyboard(context, R.xml.colemak2);
 
         final Keyboard blueprint = new Keyboard(context, R.xml.colemak_blueprint);
