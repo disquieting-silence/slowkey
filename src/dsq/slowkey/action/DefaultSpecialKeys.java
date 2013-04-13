@@ -37,6 +37,7 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.TO_COLEMAK0, new ShowKeyboardKeyAction(COLEMAK0));
         mapping.put(SpecialKeyCodes.TO_COLEMAK1, new ShowKeyboardKeyAction(COLEMAK1));
         mapping.put(SpecialKeyCodes.TO_COLEMAK2, new ShowKeyboardKeyAction(COLEMAK2));
+        mapping.put(SpecialKeyCodes.TO_COLEMAK_ALPHA, new ShowKeyboardKeyAction(COLEMAK_ALPHA));
     }
 
     @Override

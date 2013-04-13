@@ -18,8 +18,9 @@ public class ColemakKeyboards implements Keyboards {
         final Keyboard number = new Keyboard(context, R.xml.number);
         final Keyboard navigation = new Keyboard(context, R.xml.navigation);
         final Keyboard colemak0 = new Keyboard(context, R.xml.colemak0);
-        final Keyboard colemak1 = new Keyboard(context, R.xml.colemak_alpha);
+        final Keyboard colemak1 = new Keyboard(context, R.xml.colemak1);
         final Keyboard colemak2 = new Keyboard(context, R.xml.colemak2);
+        final Keyboard colemakAlpha = new Keyboard(context, R.xml.colemak_alpha);
 
         final Keyboard blueprint = new Keyboard(context, R.xml.colemak_blueprint);
         mapping.put(BLUEPRINT, blueprint);
@@ -29,6 +30,7 @@ public class ColemakKeyboards implements Keyboards {
         mapping.put(COLEMAK0, colemak0);
         mapping.put(COLEMAK1, colemak1);
         mapping.put(COLEMAK2, colemak2);
+        mapping.put(COLEMAK_ALPHA, colemakAlpha);
     }
     
     @Override
@@ -40,6 +42,6 @@ public class ColemakKeyboards implements Keyboards {
 
     @Override
     public Keyboard first() {
-        return get(COLEMAK1);
+        return get(COLEMAK_ALPHA);
     }
 }

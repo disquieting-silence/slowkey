@@ -16,5 +16,6 @@ public enum KeyboardType {
     NAVIGATION,
     COLEMAK0,
     COLEMAK1,
-    COLEMAK2
+    COLEMAK2,
+    COLEMAK_ALPHA
 }

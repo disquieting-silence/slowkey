@@ -6,7 +6,7 @@
           android:keyHeight="75px"
         >
     <Row>
-        <Key android:codes="-1000" android:keyLabel="" android:keyHeight="0px" android:keyEdgeFlags="left"/>
+        <Key android:codes="-15000" android:keyLabel="ALPHA" android:keyEdgeFlags="left"/>
         <Key android:codes="-12000" android:keyLabel="North Keys"/>
         <Key android:codes="-13000" android:keyLabel="Home Keys"/>
         <Key android:codes="-14000" android:keyLabel="South Keys" android:keyEdgeFlags="right"/>
