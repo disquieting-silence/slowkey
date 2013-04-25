@@ -26,10 +26,4 @@ public class KeyboardListener extends NoopKeyboardListener implements KeyboardVi
         final KeyAction keyAction = keys.interpret(primaryCode);
         keyAction.run(service, view, keyboardSwitcher);
     }
-
-    @Override
-    public void swipeDown() {
-        service.requestHideSelf(0);
-        view.closing();
-    }
 }
