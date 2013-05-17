@@ -1,11 +1,13 @@
 package dsq.slowkey.api;
 
 import android.inputmethodservice.InputMethodService;
-import android.inputmethodservice.Keyboard;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
-import dsq.slowkey.keyboard.*;
+import dsq.slowkey.keyboard.ColemakKeyboards;
+import dsq.slowkey.keyboard.DefaultSwitcher;
+import dsq.slowkey.keyboard.Keyboards;
+import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
@@ -56,5 +58,4 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
         super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd,
                 candidatesStart, candidatesEnd);
     }
-
 }

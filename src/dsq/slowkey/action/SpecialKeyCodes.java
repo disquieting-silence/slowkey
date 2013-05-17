@@ -17,6 +17,7 @@ public class SpecialKeyCodes {
     public static final int TO_COLEMAK2 = -14000;
     public static final int TO_COLEMAK_ALPHA = -15000;
     public static final int TO_MEGA_SYMBOLS = -16000;
+    public static final int CHANGE_INPUT = -17000;
 
     public static final int TO_BINARY = -750;
     public static final int TO_BLUEPRINT = -500;

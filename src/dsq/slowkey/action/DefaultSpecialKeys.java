@@ -21,6 +21,7 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.DOWN, new KeycodeKeyAction(KeyEvent.KEYCODE_DPAD_DOWN));
         mapping.put(Keyboard.KEYCODE_CANCEL, new CancelKeyAction());
         mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
+        mapping.put(SpecialKeyCodes.CHANGE_INPUT, new ChangeInputKeyAction());
         mapping.put(SpecialKeyCodes.TO_A1, new ShowKeyboardKeyAction(A1));
         mapping.put(SpecialKeyCodes.TO_A2, new ShowKeyboardKeyAction(A2));
         mapping.put(SpecialKeyCodes.TO_A3, new ShowKeyboardKeyAction(A3));
