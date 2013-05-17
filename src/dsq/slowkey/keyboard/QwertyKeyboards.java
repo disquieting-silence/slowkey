@@ -3,6 +3,9 @@ package dsq.slowkey.keyboard;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import dsq.slowkey.R;
+import dsq.slowkey.data.None;
+import dsq.slowkey.data.Option;
+import dsq.slowkey.data.Some;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -44,14 +47,14 @@ public class QwertyKeyboards implements Keyboards {
     }
     
     @Override
-    public Keyboard get(final KeyboardType type) {
+    public Option<Keyboard> get(final KeyboardType type) {
         Keyboard keyboard = mapping.get(type);
-        if (keyboard == null) throw new RuntimeException("Unknown keyboard type: " + type.name());
-        return keyboard;
+        if (keyboard == null) return new None<Keyboard>();
+        return new Some<Keyboard>(keyboard);
     }
 
     @Override
-    public Keyboard first() {
+    public Option<Keyboard> first() {
         return get(BLUEPRINT);
     }
 }

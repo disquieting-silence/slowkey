@@ -1,6 +1,7 @@
 package dsq.slowkey.keyboard;
 
 import android.inputmethodservice.Keyboard;
+import dsq.slowkey.data.Option;
 import dsq.slowkey.view.SlowKeyboardView;
 
 import java.util.List;
@@ -9,7 +10,7 @@ public class DefaultSwitcher implements Switcher {
 
     private final SlowKeyboardView view;
     private final Keyboards keyboards;
-    
+
     public DefaultSwitcher(final SlowKeyboardView view, final Keyboards keyboards) {
         this.view = view;
         this.keyboards = keyboards;
@@ -29,8 +30,8 @@ public class DefaultSwitcher implements Switcher {
 
     @Override
     public void toKeyboard(final KeyboardType type) {
-        Keyboard next = keyboards.get(type);
-        view.setKeyboard(next);
+        Option<Keyboard> next = keyboards.get(type);
+        if (next.isDefined()) view.setKeyboard(next.getOrDie());
     }
 
     @Override
@@ -50,4 +51,5 @@ public class DefaultSwitcher implements Switcher {
         final Keyboard current = view.getKeyboard();
         return current.isShifted();
     }
+
 }
