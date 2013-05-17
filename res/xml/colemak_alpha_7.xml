@@ -4,11 +4,11 @@
           android:keyWidth="14.2%p"
           android:horizontalGap="0px"
           android:verticalGap="0px"
-          android:keyHeight="11%p"
+          android:keyHeight="7.5%p"
         >
     <Row android:keyHeight="5%p" android:keyWidth="25%p">
-        <Key android:codes="-15000" android:keyLabel="+"/>
-        <Key android:codes="-20009" android:keyLabel="-"/>
+        <Key android:codes="-20009" android:keyLabel="+"/>
+        <Key android:codes="-20007" android:keyLabel="-"/>
         <Key android:codes="-3" android:keyLabel="HIDE"/>
         <Key android:codes="-17000" android:keyLabel="PICK"/>
     </Row>

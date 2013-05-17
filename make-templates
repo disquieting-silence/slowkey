@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+sed -e 's:keyHeight="11%p":keyHeight="9%p":g' res/xml/colemak_alpha.xml > res/xml/colemak_alpha_9.xml
+sed -e 's:keyHeight="11%p":keyHeight="7.5%p":g' res/xml/colemak_alpha.xml > res/xml/colemak_alpha_7.xml

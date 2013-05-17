@@ -24,6 +24,8 @@ public class ColemakKeyboards implements Keyboards {
         final Keyboard colemak1 = new Keyboard(context, R.xml.colemak1);
         final Keyboard colemak2 = new Keyboard(context, R.xml.colemak2);
         final Keyboard colemakAlpha = new Keyboard(context, R.xml.colemak_alpha);
+        final Keyboard colemakAlpha9 = new Keyboard(context, R.xml.colemak_alpha_9);
+        final Keyboard colemakAlpha7 = new Keyboard(context, R.xml.colemak_alpha_7);
         final Keyboard megaSymbols = new Keyboard(context, R.xml.mega_symbols);
 
         final Keyboard blueprint = new Keyboard(context, R.xml.colemak_blueprint);
@@ -35,6 +37,8 @@ public class ColemakKeyboards implements Keyboards {
         mapping.put(COLEMAK1, colemak1);
         mapping.put(COLEMAK2, colemak2);
         mapping.put(COLEMAK_ALPHA, colemakAlpha);
+        mapping.put(COLEMAK_ALPHA_9, colemakAlpha9);
+        mapping.put(COLEMAK_ALPHA_7, colemakAlpha7);
         mapping.put(MEGA_SYMBOLS, megaSymbols);
     }
     

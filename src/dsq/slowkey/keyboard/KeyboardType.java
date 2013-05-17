@@ -18,5 +18,7 @@ public enum KeyboardType {
     COLEMAK1,
     COLEMAK2,
     COLEMAK_ALPHA,
+    COLEMAK_ALPHA_9,
+    COLEMAK_ALPHA_7,
     MEGA_SYMBOLS
 }
