@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Row xmlns:android="http://schemas.android.com/apk/res/android" android:keyHeight="5%p" android:keyWidth="20%p">
+    <Key android:codes="-20000" android:keyLabel="&gt;-&lt;"/>
+    <Key android:codes="-21000" android:keyLabel="&lt;-&gt;"/>
+    <Key android:codes="-3" android:keyLabel="HIDE"/>
+    <Key android:codes="-17000" android:keyLabel="PICK"/>
+</Row>

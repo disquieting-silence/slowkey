@@ -19,7 +19,7 @@ public class ColemakKeyboards implements Keyboards {
 
     public ColemakKeyboards(final Context context) {
         final Keyboard symbol = new Keyboard(context, R.xml.symbol);
-        final Keyboard number = new Keyboard(context, R.xml.number);
+        final Keyboard number = new DefaultDynamicKeyboard(context, R.xml.number);
         final Keyboard navigation = new Keyboard(context, R.xml.navigation);
         final Keyboard colemak0 = new Keyboard(context, R.xml.colemak0);
         final Keyboard colemak1 = new Keyboard(context, R.xml.colemak1);
@@ -48,6 +48,6 @@ public class ColemakKeyboards implements Keyboards {
 
     @Override
     public Option<Keyboard> first() {
-        return get(MEGA_SYMBOLS);
+        return get(COLEMAK_ALPHA);
     }
 }
