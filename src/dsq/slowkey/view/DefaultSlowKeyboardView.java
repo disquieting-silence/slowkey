@@ -57,7 +57,7 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     }
 
     private void scaleKeyboard(final Keyboard keyboard, final double next) {
-        if (keyboard instanceof DynamicKeyboard) {
+        if (keyboard instanceof DynamicKeyboard && getContext() instanceof KeyboardInput) {
             final Window window = ((KeyboardInput) getContext()).getWindow().getWindow();
             scaler.scale(window, (DynamicKeyboard)keyboard, next);
             percent = next;

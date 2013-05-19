@@ -57,7 +57,7 @@
         <Key android:codes="124" android:keyLabel="|" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-10000" android:keyLabel="0 ... 9" android:keyWidth="28.4%p" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="-10000" android:keyLabel="0 ... 9" android:keyWidth="28.4%p" android:keyEdgeFlags="left"/>
         <Key android:codes="44" android:keyLabel=","/>
         <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="28.4%p" android:isRepeatable="true"/>
         <Key android:codes="46" android:keyLabel="."/>
