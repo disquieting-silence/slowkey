@@ -19,9 +19,8 @@ public class SpecialKeyCodes {
     public static final int TO_MEGA_SYMBOLS = -16000;
     public static final int CHANGE_INPUT = -17000;
 
-    public static final int TO_COLEMAK_ALPHA_7 = -20007;
-    public static final int TO_COLEMAK_ALPHA_9 = -20009;
-    public static final int TO_COLEMAK_ALPHA_11 = -20011;
+    public static final int KEYBOARD_SHRINK = -20000;
+    public static final int KEYBOARD_GROW = -21000;
 
     public static final int TO_BINARY = -750;
     public static final int TO_BLUEPRINT = -500;

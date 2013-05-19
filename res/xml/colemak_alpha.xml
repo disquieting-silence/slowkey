@@ -7,8 +7,8 @@
           android:keyHeight="11%p"
         >
     <Row android:keyHeight="5%p" android:keyWidth="25%p">
-        <Key android:codes="-15000" android:keyLabel="+"/>
-        <Key android:codes="-20009" android:keyLabel="-"/>
+        <Key android:codes="-20000" android:keyLabel="&gt;-&lt;"/>
+        <Key android:codes="-21000" android:keyLabel="&lt;-&gt;"/>
         <Key android:codes="-3" android:keyLabel="HIDE"/>
         <Key android:codes="-17000" android:keyLabel="PICK"/>
     </Row>

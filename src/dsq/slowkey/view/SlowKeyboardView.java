@@ -11,6 +11,8 @@ public interface SlowKeyboardView  {
     Keyboard getKeyboard();
 
     View view();
+    void shrink();
+    void grow();
 
     void setOnKeyboardActionListener(KeyboardListener listener);
 

@@ -2,7 +2,9 @@ package dsq.slowkey.api;
 
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
+import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.Window;
 import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
 import dsq.slowkey.data.Option;
@@ -23,7 +25,8 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     }
 
     @Override public void onInitializeInterface() {
-        this.keyboards = new ColemakKeyboards(this);
+        final Window window = this.getWindow().getWindow();
+        this.keyboards = new ColemakKeyboards(this, window);
     }
 
     @Override public View onCreateInputView() {
