@@ -2,7 +2,6 @@ package dsq.slowkey.action;
 
 import android.inputmethodservice.Keyboard;
 import android.view.KeyEvent;
-import dsq.slowkey.keyboard.KeyboardType;
 
 import java.util.HashMap;
 import java.util.Map;

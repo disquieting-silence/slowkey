@@ -1,9 +1,7 @@
 package dsq.slowkey.api;
 
 import android.inputmethodservice.KeyboardView;
-import dsq.slowkey.action.DefaultSpecialKeys;
-import dsq.slowkey.action.KeyAction;
-import dsq.slowkey.action.SpecialKeys;
+import dsq.slowkey.action.*;
 import dsq.slowkey.keyboard.KeyboardTransform;
 import dsq.slowkey.keyboard.Switcher;
 import dsq.slowkey.view.SlowKeyboardView;
@@ -28,6 +26,12 @@ public class KeyboardListener extends NoopKeyboardListener implements KeyboardVi
     public void onKey(final int rawCode, final int[] keyCodes) {
         final int primaryCode = transform.transform(rawCode);
         final KeyAction keyAction = keys.interpret(primaryCode);
+        keyAction.run(service, view, keyboardSwitcher);
+    }
+
+    @Override
+    public void onText(final CharSequence text) {
+        final TextKeyAction keyAction = new TextKeyAction(text.toString());
         keyAction.run(service, view, keyboardSwitcher);
     }
 }

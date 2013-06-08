@@ -1,13 +1,26 @@
 package dsq.slowkey.view;
 
+import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.util.DisplayMetrics;
 import android.view.Window;
+import dsq.slowkey.data.None;
+import dsq.slowkey.data.Option;
+import dsq.slowkey.data.Some;
+import dsq.slowkey.desk.DefaultKeyUpdater;
+import dsq.slowkey.desk.KeyData;
+import dsq.slowkey.desk.KeyTemplate;
+import dsq.slowkey.desk.KeyUpdater;
 import dsq.slowkey.keyboard.DynamicKeyboard;
+import dsq.slowkey.template.MegaAlphaTemplate;
 
 import java.util.List;
 
 public class DefaultKeyScales implements KeyScales {
+
+    private final KeyUpdater updater = new DefaultKeyUpdater();
+    private final KeyTemplate dummy = new MegaAlphaTemplate(null);
+
     @Override
     public void scale(final Window window, final DynamicKeyboard keyboard, final double percent) {
         final int height = pixels(window, percent);
@@ -30,8 +43,12 @@ public class DefaultKeyScales implements KeyScales {
         Keyboard.Key prev = null;
         int menuHeight = 0;
         int row = 0;
+        int col = 0;
         for (Keyboard.Key key : keys) {
-            if (prev != null && prev.x > key.x) row++;
+            if (prev != null && prev.x > key.x) {
+                row++;
+                col = 0;
+            }
             if (row > 0) {
                 key.height = height;
 //                key.codes = new int [ ] { 97 };
@@ -40,7 +57,10 @@ public class DefaultKeyScales implements KeyScales {
                 menuHeight = Math.max(menuHeight, key.height);
             }
 
+            final Option<KeyData> possible = dummy.get(row, col);
+            if (possible.isDefined()) updater.mutate(key, possible.getOrDie());
 
+            col++;
             prev = key;
         }
     }

@@ -1,5 +1,7 @@
 package dsq.slowkey.desk;
 
+import dsq.slowkey.data.Option;
+
 public interface KeyTemplate {
-    KeyData get(int row, int column);
+    Option<KeyData> get(int row, int column);
 }
