@@ -26,13 +26,21 @@ public class KeyData {
         this(code, text, image, label, 1);
     }
 
-    public KeyData(final Option<Integer> code, final Option<String> text, final Option<Drawable> image, final Option<String> label, final int rowspan) {
+    public KeyData(final Option<Integer> code, final Option<String> text, final Option<Drawable> image, final Option<String> label, final int colspan) {
+        this(code, text, image, label, colspan, false, false, false);
+    }
+
+    public KeyData(final Option<Integer> code, final Option<String> text, final Option<Drawable> image, final Option<String> label,
+      final int colspan, final boolean isModifier, boolean isSticky, boolean isRepeatable) {
         this.code = code;
         this.text = text;
         this.image = image;
         this.label = label;
-        this.rowspan = rowspan;
-        this.colspan = 1;
+        this.rowspan = 1;
+        this.colspan = colspan;
+        this.isModifier = isModifier;
+        this.isSticky = isSticky;
+        this.isRepeatable = isRepeatable;
     }
 
     public final Option<Integer> code;
@@ -41,4 +49,7 @@ public class KeyData {
     public final Option<String> label;
     public final int colspan;
     public final int rowspan;
+    public final boolean isModifier;
+    public final boolean isSticky;
+    public final boolean isRepeatable;
 }

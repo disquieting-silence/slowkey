@@ -8,6 +8,8 @@ import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.keyboard.*;
+import dsq.slowkey.template.DefaultTemplateKeyboard;
+import dsq.slowkey.template.MegaAlphaTemplate;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {
@@ -31,7 +33,11 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
         keyboardSwitcher = new DefaultSwitcher(view, keyboards);
-        setOptKeyboard(keyboards.first());
+
+        final DefaultTemplateKeyboard templateKeyboard = new DefaultTemplateKeyboard(this);
+        templateKeyboard.update(getWindow().getWindow(), 0.07, new MegaAlphaTemplate(this));
+        view.setKeyboard(templateKeyboard);
+//        setOptKeyboard(keyboards.first());
         return view.view();
     }
 
