@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface KeyPositionCache {
     Option<Integer> find(final int x, final int y);
-    void update(final List<Keyboard.Key> keys, int width, int height);
+    void update(final List<Keyboard.Key> keys, int rows, int columns, int unitWidth, int unitHeight);
 }

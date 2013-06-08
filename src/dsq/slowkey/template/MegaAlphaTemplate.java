@@ -156,4 +156,13 @@ public class MegaAlphaTemplate implements KeyTemplate {
     public int numColumns(int row) {
         return row >= 0 && row < keys.size() ? keys.get(row).size() : 0;
     }
+
+    @Override
+    public int maxColumns() {
+        int maxColumns = 0;
+        for (final List<Option<KeyData>> row : keys) {
+            maxColumns = Math.max(maxColumns, row.size());
+        }
+        return maxColumns;
+    }
 }
