@@ -11,9 +11,13 @@ public class DefaultKeyScales implements KeyScales {
     @Override
     public void scale(final Window window, final DynamicKeyboard keyboard, final double percent) {
         final int height = pixels(window, percent);
-        final Keyboard.Key last = mutate(keyboard, height);
-        final int totalHeight = (last == null ? 0 : last.y) + height + 1;
-        keyboard.setDynamicHeight(totalHeight);
+        final List<Keyboard.Key> keys = keyboard.getKeys();
+        if (keys.size() > 0) {
+            mutate(keys, height);
+            final Keyboard.Key last = keys.get(keys.size() - 1);
+            final int totalHeight = last.y + height + 1;
+            keyboard.setDynamicHeight(totalHeight);
+        }
     }
 
     private int pixels(final Window window, final double percent) {
@@ -22,15 +26,15 @@ public class DefaultKeyScales implements KeyScales {
         return (int)(percent * metrics.heightPixels);
     }
 
-    private Keyboard.Key mutate(final DynamicKeyboard keyboard, final int height) {
+    private void mutate(final List<Keyboard.Key> keys, final int height) {
         Keyboard.Key prev = null;
         int menuHeight = 0;
         int row = 0;
-        final List<Keyboard.Key> keys = keyboard.getKeys();
         for (Keyboard.Key key : keys) {
             if (prev != null && prev.x > key.x) row++;
             if (row > 0) {
                 key.height = height;
+//                key.codes = new int [ ] { 97 };
                 key.y = menuHeight + (row - 1) * (height + 1);
             } else {
                 menuHeight = Math.max(menuHeight, key.height);
@@ -39,6 +43,5 @@ public class DefaultKeyScales implements KeyScales {
 
             prev = key;
         }
-        return prev;
     }
 }
