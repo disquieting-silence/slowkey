@@ -10,6 +10,7 @@ import dsq.slowkey.desk.KeyTemplate;
 import dsq.slowkey.template.AbstractTemplateKeyboard;
 import dsq.slowkey.template.DefaultTemplateKeyboard;
 import dsq.slowkey.vista.MegaAlphaTemplate;
+import dsq.slowkey.vista.MegaNumberTemplate;
 import dsq.slowkey.vista.MegaSymbolTemplate;
 
 import java.util.HashMap;
@@ -32,6 +33,7 @@ public class TemplateKeyboards implements Keyboards {
 
         templates.put(KeyboardType.COLEMAK_ALPHA, new MegaAlphaTemplate(context));
         templates.put(KeyboardType.MEGA_SYMBOLS, new MegaSymbolTemplate(context));
+        templates.put(KeyboardType.NUMBER, new MegaNumberTemplate(context));
 
     }
     @Override

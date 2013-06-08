@@ -112,6 +112,19 @@ public class DefaultCommonTemplates implements CommonTemplates {
     }
 
     @Override
+    public Option<KeyData> keyCharSpan(final char character, final int span) {
+        final KeyData data = new KeyData(
+            new Some<Integer>((int) character),
+            new Some<String>(String.valueOf(character)),
+            new None<Drawable>(),
+            new Some<String>(String.valueOf(character)),
+            span,
+            false, false, false
+        );
+        return new Some<KeyData>(data);
+    }
+
+    @Override
     public int numRows(final List<List<Option<KeyData>>> keys) {
         return keys.size();
     }

@@ -29,6 +29,7 @@ public interface CommonTemplates {
     List<Option<KeyData>> keyRow(char[] chars);
 
     Option<KeyData> keyChar(char character);
+    Option<KeyData> keyCharSpan(char character, int span);
 
     int numRows(List<List<Option<KeyData>>> keys);
 }
