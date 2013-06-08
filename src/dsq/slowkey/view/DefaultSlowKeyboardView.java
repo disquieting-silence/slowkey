@@ -16,16 +16,14 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     public static final double SCALE_MIN = 0.07;
     public static final double SCALE_MAX = 0.12;
     private double percent = 0.11;
-    private final KeyScales scaler;
+
 
     public DefaultSlowKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        scaler = new DefaultKeyScales(context);
     }
 
     public DefaultSlowKeyboardView(final Context context, final AttributeSet attrs, final int defStyle) {
         super(context, attrs, defStyle);
-        scaler = new DefaultKeyScales(context);
     }
 
     @Override
@@ -37,16 +35,6 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     public void setKeyboard(final Keyboard keyboard) {
         scaleKeyboard(keyboard, percent);
         super.setKeyboard(keyboard);
-    }
-
-    @Override
-    public void shrink() {
-        adjustHeight(percent - SCALE_STEP);
-    }
-
-    @Override
-    public void grow() {
-        adjustHeight(percent + SCALE_STEP);
     }
 
     private void adjustHeight(final double newValue) {
@@ -61,7 +49,6 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     private void scaleKeyboard(final Keyboard keyboard, final double next) {
         if (keyboard instanceof DynamicKeyboard && getContext() instanceof KeyboardInput) {
             final Window window = ((KeyboardInput) getContext()).getWindow().getWindow();
-            scaler.scale(window, (DynamicKeyboard)keyboard, next);
             percent = next;
         }
     }

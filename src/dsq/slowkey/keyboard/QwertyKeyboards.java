@@ -54,6 +54,10 @@ public class QwertyKeyboards implements Keyboards {
     }
 
     @Override
+    public void adjustHeight(final double percent) {
+    }
+
+    @Override
     public Option<Keyboard> first() {
         return get(BLUEPRINT);
     }

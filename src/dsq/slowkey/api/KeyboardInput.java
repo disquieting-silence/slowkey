@@ -27,17 +27,13 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
 
     @Override public void onInitializeInterface() {
         final Window window = this.getWindow().getWindow();
-        this.keyboards = new ColemakKeyboards(this);
+        this.keyboards = new TemplateKeyboards(window, this);
     }
 
     @Override public View onCreateInputView() {
         view = (SlowKeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
         keyboardSwitcher = new DefaultSwitcher(view, keyboards);
-
-        final DefaultTemplateKeyboard templateKeyboard = new DefaultTemplateKeyboard(this);
-        templateKeyboard.update(getWindow().getWindow(), 0.07, new MegaAlphaTemplate(this));
-        view.setKeyboard(templateKeyboard);
-//        setOptKeyboard(keyboards.first());
+        setOptKeyboard(keyboards.first());
         return view.view();
     }
 

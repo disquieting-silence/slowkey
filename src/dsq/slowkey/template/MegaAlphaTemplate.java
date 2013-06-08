@@ -95,7 +95,6 @@ public class MegaAlphaTemplate implements KeyTemplate {
         return first;
     }
 
-
     public MegaAlphaTemplate(final Context context) {
         this.keys = new ArrayList<List<Option<KeyData>>>();
 
@@ -139,7 +138,6 @@ public class MegaAlphaTemplate implements KeyTemplate {
 
     @Override
     public Option<KeyData> get(final int row, final int column) {
-        Log.v("SLOWKEY", "Keys.size(): " + keys.size() + ", " + keys.get(1));
         if (keys.size() == 0) return new None<KeyData>();
         if (row >= 0 && row < keys.size() && column >= 0 && column < keys.get(row).size()) {
             return keys.get(row).get(column);

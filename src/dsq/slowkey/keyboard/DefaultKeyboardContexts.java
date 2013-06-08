@@ -13,8 +13,6 @@ public class DefaultKeyboardContexts implements KeyboardContexts {
         int main = type & EditorInfo.TYPE_MASK_CLASS;
         int variation = type & EditorInfo.TYPE_MASK_VARIATION;
 
-        Log.v("SLOWKEY", "Main: " + main + ", Variation: " + variation);
-
         // number or datetime => numbers
         // phone => numbers
         // text => variation is password .. turn off predictions

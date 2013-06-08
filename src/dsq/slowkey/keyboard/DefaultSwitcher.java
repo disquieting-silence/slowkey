@@ -52,4 +52,14 @@ public class DefaultSwitcher implements Switcher {
         return current.isShifted();
     }
 
+    @Override
+    public void adjustHeight(final double percent) {
+        keyboards.adjustHeight(percent);
+        refresh();
+    }
+
+    private void refresh() {
+        view.setKeyboard(view.getKeyboard());
+    }
+
 }

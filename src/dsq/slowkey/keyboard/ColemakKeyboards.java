@@ -47,6 +47,11 @@ public class ColemakKeyboards implements Keyboards {
     }
 
     @Override
+    public void adjustHeight(final double percent) {
+
+    }
+
+    @Override
     public Option<Keyboard> first() {
         return get(COLEMAK_ALPHA);
     }

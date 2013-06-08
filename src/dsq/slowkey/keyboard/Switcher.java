@@ -5,4 +5,5 @@ public interface Switcher {
     void toggleShifted();
 
     boolean isShifted();
+    void adjustHeight(double percent);
 }

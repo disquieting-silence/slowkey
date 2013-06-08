@@ -39,7 +39,12 @@ public class DefaultKeyGenerator implements KeyGenerator {
 
         Keyboard.Key key = new Keyboard.Key(row) {
             @Override
-            // This is hacky beyond hacky.
+            // This is hacky beyond hacky. Essentially, the KeyboardView code provided by Android doesn't use the
+            // nearestKeys check to find a candidate key if the keycode is not larger than 32. Therefore, if it is
+            // not considered inside, no key press is sent through. Through logging, I was able to identify that the
+            // nearestKeys part was saying I was hitting backspace, but the view stopped it going through. I think the
+            // > 32 check was also why my space sometimes doesn't work. It would be great if this hack fixes that
+            // problem. This was all dependent on the value of proximity correction as well (sort of).
             public boolean isInside(final int x, final int y) {
                 if (super.isInside(x, y)) return true;
                 final Option<Integer> cached = cache.find(x, y);

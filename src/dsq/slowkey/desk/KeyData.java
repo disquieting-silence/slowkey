@@ -19,7 +19,7 @@ public class KeyData {
     }
 
     public KeyData(final char character) {
-        this(new Some<Integer>(Character.getNumericValue(character)), new Some<String>(String.valueOf(character)), new None<Drawable>(), new Some<String>(String.valueOf(character)));
+        this(new Some<Integer>((int) character), new Some<String>(String.valueOf(character)), new None<Drawable>(), new Some<String>(String.valueOf(character)));
     }
 
     public KeyData(final Option<Integer> code, final Option<String> text, final Option<Drawable> image, final Option<String> label) {

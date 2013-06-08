@@ -6,13 +6,16 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Window;
 import dsq.slowkey.R;
+import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.data.Some;
 import dsq.slowkey.desk.KeyTemplate;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class DefaultTemplateKeyboard extends NoopKeyboard implements TemplateKeyboard {
+public class DefaultTemplateKeyboard extends AbstractTemplateKeyboard implements TemplateKeyboard {
 
     private KeyGenerator generator = new DefaultKeyGenerator();
     private WindowMetrics metrics = new DefaultWindowMetrics();
@@ -24,6 +27,7 @@ public class DefaultTemplateKeyboard extends NoopKeyboard implements TemplateKey
     private int totalWidth = 0;
     private int totalHeight = 0;
 
+    private Option<Keyboard.Key> shiftKey = new None<Key>();
 
     public DefaultTemplateKeyboard(Context context) {
         super(context, R.xml.blank);
@@ -39,6 +43,21 @@ public class DefaultTemplateKeyboard extends NoopKeyboard implements TemplateKey
         this.totalHeight = lastKey != null ? lastKey.y + lastKey.height : 0;
         final int minKeyWidth = metrics.widthPx(window, 1.0 / template.maxColumns());
         cache.update(this.keys, template.numRows(), template.maxColumns(), minKeyWidth, keyHeight);
+        updateModifiers();
+    }
+
+    private void updateModifiers() {
+        for (Key key : keys) {
+            if (key.codes.length > 0 && key.codes[0] == Keyboard.KEYCODE_SHIFT) {
+                Log.v("SLOWKEY", "Shift key: " + key.x + ", " + key.y);
+                shiftKey = new Some<Key>(key);
+            }
+        }
+    }
+
+    @Override
+    public List<Key> getModifierKeys() {
+        return shiftKey.isDefined() ? Arrays.asList(shiftKey.getOrDie()) : new ArrayList<Key>();
     }
 
     @Override
@@ -48,8 +67,13 @@ public class DefaultTemplateKeyboard extends NoopKeyboard implements TemplateKey
 
     @Override
     public boolean setShifted(final boolean shift) {
+        // Very similar code to the original Keyboard, though there isn't really anything else you can do
+        boolean changed = shifted != shift;
+        if (shiftKey.isDefined()) {
+            shiftKey.getOrDie().on = shift;
+        }
         shifted = shift;
-        return true;
+        return changed;
     }
 
     @Override
@@ -69,9 +93,7 @@ public class DefaultTemplateKeyboard extends NoopKeyboard implements TemplateKey
 
     @Override
     public int[] getNearestKeys(final int x, final int y) {
-        Log.v("SLOWKEY", "Nearest to: " + x + ", " + y);
         final Option<Integer> keyOption = cache.find(x, y);
-        Log.v("SLOWKEY", "value: " + (keyOption.isDefined() ? keyOption.getOrDie() : "nothing"));
         return keyOption.isDefined() ? new int[] { keyOption.getOrDie() } : new int[0];
     }
 }
