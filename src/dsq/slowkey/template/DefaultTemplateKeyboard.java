@@ -49,7 +49,6 @@ public class DefaultTemplateKeyboard extends AbstractTemplateKeyboard implements
     private void updateModifiers() {
         for (Key key : keys) {
             if (key.codes.length > 0 && key.codes[0] == Keyboard.KEYCODE_SHIFT) {
-                Log.v("SLOWKEY", "Shift key: " + key.x + ", " + key.y);
                 shiftKey = new Some<Key>(key);
             }
         }

@@ -8,8 +8,6 @@ import android.view.inputmethod.EditorInfo;
 import dsq.slowkey.R;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.keyboard.*;
-import dsq.slowkey.template.DefaultTemplateKeyboard;
-import dsq.slowkey.template.MegaAlphaTemplate;
 import dsq.slowkey.view.SlowKeyboardView;
 
 public class KeyboardInput extends InputMethodService implements SlowInputMethodService {

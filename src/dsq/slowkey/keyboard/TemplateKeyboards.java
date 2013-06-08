@@ -2,7 +2,6 @@ package dsq.slowkey.keyboard;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
-import android.util.Log;
 import android.view.Window;
 import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
@@ -10,8 +9,8 @@ import dsq.slowkey.data.Some;
 import dsq.slowkey.desk.KeyTemplate;
 import dsq.slowkey.template.AbstractTemplateKeyboard;
 import dsq.slowkey.template.DefaultTemplateKeyboard;
-import dsq.slowkey.template.MegaAlphaTemplate;
-import dsq.slowkey.template.TemplateKeyboard;
+import dsq.slowkey.vista.MegaAlphaTemplate;
+import dsq.slowkey.vista.MegaSymbolTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +31,7 @@ public class TemplateKeyboards implements Keyboards {
         keyboard = new DefaultTemplateKeyboard(context);
 
         templates.put(KeyboardType.COLEMAK_ALPHA, new MegaAlphaTemplate(context));
-        templates.put(KeyboardType.MEGA_SYMBOLS, new MegaAlphaTemplate(context));
+        templates.put(KeyboardType.MEGA_SYMBOLS, new MegaSymbolTemplate(context));
 
     }
     @Override
