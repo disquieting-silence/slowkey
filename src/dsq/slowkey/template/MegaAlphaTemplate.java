@@ -2,6 +2,7 @@ package dsq.slowkey.template;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
+import dsq.slowkey.R;
 import dsq.slowkey.action.SpecialKeyCodes;
 import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
@@ -85,6 +86,15 @@ public class MegaAlphaTemplate implements KeyTemplate {
 //    <Key android:codes="-17000" android:keyLabel="INPUT"/>
 //    <Key android:codes="-10000" android:keyLabel="0…9"/>
 //    </Row>
+
+//    <Row>
+//    <Key android:codes="-16000" android:keyLabel="MOVE" android:keyEdgeFlags="left"/>
+//    <Key android:codes="122" android:keyLabel="z"/>
+//    <Key android:codes="120" android:keyLabel="x"/>
+//    <Key android:codes="113" android:keyLabel="q"/>
+//    <Key android:codes="58" android:keyLabel=":"/>
+//    <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" android:keyWidth="28.4%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+//    </Row>
 //
 
     public MegaAlphaTemplate(final Context context) {
@@ -95,6 +105,15 @@ public class MegaAlphaTemplate implements KeyTemplate {
                 new KeyData(Keyboard.KEYCODE_CANCEL, "HIDE"),
                 new KeyData(CHANGE_INPUT, "INPUT"),
                 new KeyData(TO_NUMBER, "0…9")
+            },
+
+            new KeyData[] {
+                new KeyData(TO_MEGA_SYMBOLS, "MOVE"),
+                new KeyData('z'),
+                new KeyData('x'),
+                new KeyData('q'),
+                new KeyData(':'),
+                new KeyData(Keyboard.KEYCODE_DELETE, context.getResources().getDrawable(R.drawable.sym_keyboard_delete))
             }
         };
     }

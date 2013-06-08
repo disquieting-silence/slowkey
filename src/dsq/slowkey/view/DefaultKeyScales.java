@@ -1,5 +1,6 @@
 package dsq.slowkey.view;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.util.DisplayMetrics;
@@ -18,8 +19,13 @@ import java.util.List;
 
 public class DefaultKeyScales implements KeyScales {
 
+    private final KeyTemplate dummy;
+
+    public DefaultKeyScales(final Context context) {
+        dummy = new MegaAlphaTemplate(context);
+    }
+
     private final KeyUpdater updater = new DefaultKeyUpdater();
-    private final KeyTemplate dummy = new MegaAlphaTemplate(null);
 
     @Override
     public void scale(final Window window, final DynamicKeyboard keyboard, final double percent) {

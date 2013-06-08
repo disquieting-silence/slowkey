@@ -16,14 +16,16 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     public static final double SCALE_MIN = 0.07;
     public static final double SCALE_MAX = 0.12;
     private double percent = 0.11;
-    private final KeyScales scaler = new DefaultKeyScales();
+    private final KeyScales scaler;
 
     public DefaultSlowKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        scaler = new DefaultKeyScales(context);
     }
 
     public DefaultSlowKeyboardView(final Context context, final AttributeSet attrs, final int defStyle) {
         super(context, attrs, defStyle);
+        scaler = new DefaultKeyScales(context);
     }
 
     @Override
