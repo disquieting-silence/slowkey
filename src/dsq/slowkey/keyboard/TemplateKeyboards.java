@@ -21,7 +21,7 @@ public class TemplateKeyboards implements Keyboards {
     private final AbstractTemplateKeyboard keyboard;
     private final Window window;
 
-    private double keyScale = 0.05;
+    private double keyScale = 0.09;
     public static final double SCALE_MIN = 0.07;
     public static final double SCALE_MAX = 0.12;
     private KeyTemplate current;
