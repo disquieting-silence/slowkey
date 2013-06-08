@@ -38,6 +38,7 @@ public class MegaSymbolTemplate implements KeyTemplate {
         final ArrayList<Option<KeyData>> last = new ArrayList<Option<KeyData>>();
         last.addAll(common.keyRow(new char[] { '~', '`', ',' }));
         last.add(common.spaceKey(context, 2));
+        last.add(new None<KeyData>());
         last.add(common.keyChar('.'));
         last.add(common.enterKey(context, 1));
         keys.add(last);

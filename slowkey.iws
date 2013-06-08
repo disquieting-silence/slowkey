@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab37b54-7173-4d6e-9954-dc845a8074cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slowkey.iws" afterPath="$PROJECT_DIR$/slowkey.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java" />
     </list>
     <ignored path="slowkey.iws" />
@@ -74,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultKeyGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultKeyGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/template/DefaultKeyGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="-0.36633664">
+            <state line="12" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#669#683#0" expanded="true" />
               </folding>
@@ -97,7 +93,7 @@
       <file leaf-file-name="MegaSymbolTemplate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+            <state line="42" column="58" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#722#739#0" expanded="true" />
@@ -107,15 +103,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MegaNumberTemplate.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MegaNumberTemplate.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
+            <state line="21" column="95" selection-start="768" selection-end="768" vertical-scroll-proportion="0.3764479">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#642#659#0" expanded="true" />
-                <element signature="e#1093#1110#0" expanded="true" />
-                <element signature="e#1345#1362#0" expanded="true" />
+                <element signature="e#852#869#0" expanded="true" />
+                <element signature="e#1303#1320#0" expanded="true" />
+                <element signature="e#1595#1612#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,7 +129,7 @@
       <file leaf-file-name="MegaAlphaTemplate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaAlphaTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="53" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+            <state line="45" column="47" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#732#749#0" expanded="true" />
@@ -146,7 +142,7 @@
       <file leaf-file-name="CommonTemplates.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="27" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+            <state line="31" column="20" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,7 +153,7 @@
       <file leaf-file-name="DefaultCommonTemplates.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="39" selection-start="4611" selection-end="4611" vertical-scroll-proportion="0.0">
+            <state line="114" column="27" selection-start="4221" selection-end="4221" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#780#788#0" expanded="true" />
@@ -208,11 +204,11 @@
         <option value="$PROJECT_DIR$/src/dsq/slowkey/action/TextKeyAction.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaAlphaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java" />
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" />
       </list>
     </option>
   </component>
@@ -880,41 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaAlphaTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="53" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#732#749#0" expanded="true" />
-            <element signature="e#1618#1635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#722#739#0" expanded="true" />
-            <element signature="e#1619#1636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/number.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="26" selection-start="265" selection-end="2845" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="27" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,37 +892,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#642#659#0" expanded="true" />
-            <element signature="e#1093#1110#0" expanded="true" />
-            <element signature="e#1345#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="76" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="39" selection-start="4611" selection-end="4611" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#780#788#0" expanded="true" />
-            <element signature="e#836#844#0" expanded="true" />
-            <element signature="e#893#902#0" expanded="true" />
-            <element signature="e#952#962#0" expanded="true" />
-            <element signature="e#3420#3437#0" expanded="true" />
-            <element signature="e#3900#3917#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,9 +908,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/template/DefaultKeyGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="-0.36633664">
+        <state line="12" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#669#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="27" selection-start="4221" selection-end="4221" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#780#788#0" expanded="true" />
+            <element signature="e#836#844#0" expanded="true" />
+            <element signature="e#893#902#0" expanded="true" />
+            <element signature="e#952#962#0" expanded="true" />
+            <element signature="e#3420#3437#0" expanded="true" />
+            <element signature="e#3900#3917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="20" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaAlphaTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="47" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#749#0" expanded="true" />
+            <element signature="e#1618#1635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="58" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#722#739#0" expanded="true" />
+            <element signature="e#1619#1636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="95" selection-start="768" selection-end="768" vertical-scroll-proportion="0.3764479">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#852#869#0" expanded="true" />
+            <element signature="e#1303#1320#0" expanded="true" />
+            <element signature="e#1595#1612#0" expanded="true" />
           </folding>
         </state>
       </provider>

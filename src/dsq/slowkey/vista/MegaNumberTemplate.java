@@ -1,6 +1,8 @@
 package dsq.slowkey.vista;
 
 import android.content.Context;
+import dsq.slowkey.action.SpecialKeyCodes;
+import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.data.Some;
 import dsq.slowkey.desk.KeyData;
@@ -15,8 +17,10 @@ public class MegaNumberTemplate implements KeyTemplate {
 
     public MegaNumberTemplate(final Context context) {
         keys = new ArrayList<List<Option<KeyData>>>();
-        
-        keys.add(common.topMenu());
+
+        final List<Option<KeyData>> menu = common.topMenu();
+        menu.set(menu.size() - 1, common.codeLabel(SpecialKeyCodes.TO_COLEMAK_ALPHA, "ALPHA"));
+        keys.add(menu);
 
         final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
         second.addAll(common.keyRow(new char[] { '(', ')', '/', '*' }));
@@ -30,12 +34,14 @@ public class MegaNumberTemplate implements KeyTemplate {
         final List<Option<KeyData>> sixth = new ArrayList<Option<KeyData>>();
         sixth.add(common.keyChar('½'));
         sixth.add(common.keyCharSpan('0', 2));
+        sixth.add(new None<KeyData>());
         sixth.addAll(common.keyRow(new char[] { ',', '.' }));
         keys.add(sixth);
 
         final List<Option<KeyData>> last = new ArrayList<Option<KeyData>>();
         last.add(common.keyChar('¾'));
         last.add(common.spaceKey(context, 2));
+        last.add(new None<KeyData>());
         last.add(common.keyChar(':'));
         last.add(common.enterKey(context, 1));
         keys.add(last);
