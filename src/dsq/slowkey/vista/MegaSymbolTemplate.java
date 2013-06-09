@@ -22,10 +22,10 @@ public class MegaSymbolTemplate implements KeyTemplate {
 
         final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
         second.add(common.codeLabel(SpecialKeyCodes.TO_COLEMAK_ALPHA, "ALPHA"));
-        second.add(common.codeLabel(SpecialKeyCodes.LEFT, "\u2190"));
-        second.add(common.codeLabel(SpecialKeyCodes.UP, "\u2191"));
-        second.add(common.codeLabel(SpecialKeyCodes.RIGHT, "\u2192"));
-        second.add(common.codeLabel(SpecialKeyCodes.DOWN, "\u2193"));
+        second.add(common.codeLabel(SpecialKeyCodes.LEFT, "\u2190", true));
+        second.add(common.codeLabel(SpecialKeyCodes.UP, "\u2191", true));
+        second.add(common.codeLabel(SpecialKeyCodes.RIGHT, "\u2192", true));
+        second.add(common.codeLabel(SpecialKeyCodes.DOWN, "\u2193", true));
         second.add(common.backspaceKey(context, 2));
         second.add(new None<KeyData>());
         keys.add(second);

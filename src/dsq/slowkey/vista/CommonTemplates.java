@@ -23,6 +23,7 @@ public interface CommonTemplates {
     Option<KeyData> get(List<List<Option<KeyData>>> keys, int row, int column);
 
     Some<KeyData> codeLabel(int code, String label);
+    Some<KeyData> codeLabel(int code, String label, boolean isRepeatable);
 
     List<Option<KeyData>> topMenu();
 
