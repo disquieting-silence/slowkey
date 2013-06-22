@@ -16,7 +16,7 @@ public class DefaultKeyPositionCache implements KeyPositionCache {
     @Override
     public Option<Integer> find(final int x, final int y) {
         final Position cell = toGrid(x, y);
-        return cell.x >= 0 && cell.x < cache.length && cell.y >= 0 && cell.y < cache[cell.x].length ?
+        return cell.x >= 0 && cell.x < cache.length && cell.y >= 0 && cell.y < cache[cell.x].length && cache[cell.x][cell.y] > -1 ?
             new Some<Integer>(cache[cell.x][cell.y]) : new None<Integer>();
     }
 
