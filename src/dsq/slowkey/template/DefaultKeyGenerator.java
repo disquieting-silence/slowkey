@@ -16,21 +16,29 @@ public class DefaultKeyGenerator implements KeyGenerator {
     @Override
     public List<Keyboard.Key> generate(final KeyPositionCache cache, final Keyboard keyboard, final int totalWidth, final int keyHeight, final KeyTemplate template) {
         final List<Keyboard.Key> result = new ArrayList<Keyboard.Key>();
+        int x = 0;
+        int y = 0;
         for (int i = 0; i < template.numRows(); i++) {
+            x = 0;
             Keyboard.Row row = new Keyboard.Row(keyboard);
             final int numColumns = template.numColumns(i);
             final int keyWidth = totalWidth / numColumns;
+            final int rowHeight = (int)(keyHeight * template.getRowScale(i));
             for (int j = 0; j < numColumns; j++) {
                 final Option<KeyData> dataOption = template.get(i, j);
                 if (dataOption.isDefined()) {
                     final KeyData data = dataOption.getOrDie();
-                    Keyboard.Key key = nu(cache, result.size(), row, data, j, i, keyWidth, keyHeight);
+                    Keyboard.Key key = nu(cache, result.size(), row, data, x, y, keyWidth, rowHeight);
                     result.add(key);
                     // FIX: So very, very evil --- but so is this whole method atm.
-                    j += (data.colspan - 1);
+                    int step = data.colspan - 1;
+                    x += (step * keyWidth);
+                    j += step;
                 }
+                x += keyWidth;
 
             }
+            y += rowHeight;
         }
         return result;
     }
@@ -54,8 +62,8 @@ public class DefaultKeyGenerator implements KeyGenerator {
         key.width = keyWidth;
         key.height = keyHeight;
 
-        key.x = keyWidth * x;
-        key.y = keyHeight * y;
+        key.x = x;
+        key.y = y;
 
         updater.mutate(key, data);
         key.width = keyWidth * data.colspan;

@@ -60,8 +60,8 @@ public class TallLetterTemplate implements KeyTemplate {
     }
 
     @Override
-    public int getRowHeight(final int row) {
-        return row == 0 ? 5 : 10;
+    public double getRowScale(final int row) {
+        return row == 0 ? 0.5 : 1;
     }
 
     @Override

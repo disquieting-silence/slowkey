@@ -52,7 +52,7 @@ public class TallSymbolTemplate implements KeyTemplate {
     }
 
     @Override
-    public int getRowHeight(final int row) {
+    public double getRowScale(final int row) {
         return 1;
     }
 
