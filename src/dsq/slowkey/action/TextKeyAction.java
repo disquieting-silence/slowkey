@@ -16,12 +16,10 @@ public class TextKeyAction implements KeyAction {
     @Override
     public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
         final InputConnection conn = service.getCurrentInputConnection();
-        conn.commitText(value, 1);
+        final String text = keyboardSwitcher.isShifted() ? value.toUpperCase() : value.toLowerCase();
+        conn.commitText(text, 1);
         if (keyboardSwitcher.isShifted()) {
-            Log.v("slowkey", "shifted");
             keyboardSwitcher.toggleShifted();
-        } else {
-            Log.v("slowkey", "ushifted");
         }
     }
 }

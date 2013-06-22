@@ -5,4 +5,8 @@ public interface Switcher {
     void toggleShifted();
 
     boolean isShifted();
+    void shrink();
+    void grow();
+
+    void setScreen(ScreenMode mode);
 }

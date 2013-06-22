@@ -18,9 +18,11 @@ public class CharKeyAction implements KeyAction {
         final InputConnection conn = service.getCurrentInputConnection();
         final String character = String.valueOf((char) code);
         final String value = keyboardSwitcher.isShifted() ? character.toUpperCase() : character;
-        conn.commitText(value, 1);
-        if (keyboardSwitcher.isShifted()) {
-            keyboardSwitcher.toggleShifted();
+        if (conn != null) {
+            conn.commitText(value, 1);
+            if (keyboardSwitcher.isShifted()) {
+                keyboardSwitcher.toggleShifted();
+            }
         }
     }
 }

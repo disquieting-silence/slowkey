@@ -24,4 +24,9 @@ public class DefaultSlowKeyboardView extends KeyboardView implements SlowKeyboar
     public void setOnKeyboardActionListener(final KeyboardListener listener) {
         super.setOnKeyboardActionListener(listener);
     }
+
+    @Override
+    public void onMeasure(final int widthMeasureSpec, final int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
 }
