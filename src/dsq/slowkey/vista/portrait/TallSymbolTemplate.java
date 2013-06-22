@@ -1,4 +1,4 @@
-package dsq.slowkey.vista;
+package dsq.slowkey.vista.portrait;
 
 import android.content.Context;
 import dsq.slowkey.action.SpecialKeyCodes;
@@ -6,22 +6,24 @@ import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.desk.KeyData;
 import dsq.slowkey.desk.KeyTemplate;
+import dsq.slowkey.vista.common.CommonTemplates;
+import dsq.slowkey.vista.common.DefaultCommonTemplates;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MegaSymbolTemplate implements KeyTemplate {
+public class TallSymbolTemplate implements KeyTemplate {
     private List<List<Option<KeyData>>> keys;
     private final CommonTemplates common = new DefaultCommonTemplates();
 
-    public MegaSymbolTemplate(final Context context) {
+    public TallSymbolTemplate(final Context context) {
         keys = new ArrayList<List<Option<KeyData>>>();
 
         final List<Option<KeyData>> first = common.topMenu();
         keys.add(first);
 
         final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
-        second.add(common.codeLabel(SpecialKeyCodes.TO_COLEMAK_ALPHA, "ALPHA"));
+        second.add(common.codeLabel(SpecialKeyCodes.TO_LETTER, "ALPHA"));
         second.add(common.codeLabel(SpecialKeyCodes.LEFT, "\u2190", true));
         second.add(common.codeLabel(SpecialKeyCodes.UP, "\u2191", true));
         second.add(common.codeLabel(SpecialKeyCodes.RIGHT, "\u2192", true));
@@ -47,6 +49,11 @@ public class MegaSymbolTemplate implements KeyTemplate {
     @Override
     public Option<KeyData> get(final int row, final int column) {
         return common.get(keys, row, column);
+    }
+
+    @Override
+    public int getRowHeight(final int row) {
+        return 1;
     }
 
     @Override

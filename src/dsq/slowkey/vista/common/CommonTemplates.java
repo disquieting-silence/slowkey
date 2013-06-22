@@ -1,4 +1,4 @@
-package dsq.slowkey.vista;
+package dsq.slowkey.vista.common;
 
 import android.content.Context;
 import dsq.slowkey.data.Option;

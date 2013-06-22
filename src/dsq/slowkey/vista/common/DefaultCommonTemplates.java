@@ -1,4 +1,4 @@
-package dsq.slowkey.vista;
+package dsq.slowkey.vista.common;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -46,7 +46,7 @@ public class DefaultCommonTemplates implements CommonTemplates {
 
     @Override
     public Option<KeyData> shiftKey(final Context context, final int colspan) {
-        return special(context, KEYCODE_SHIFT, R.drawable.sym_keyboard_shift, colspan, true, true, false);
+        return special(context, KEYCODE_SHIFT, R.drawable.new_shift, colspan, true, true, false);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package dsq.slowkey.api;
 
+import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.view.View;
@@ -26,6 +27,11 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     @Override public void onInitializeInterface() {
         final Window window = this.getWindow().getWindow();
         this.keyboards = new TemplateKeyboards(window, this);
+    }
+
+    @Override
+    public void onConfigurationChanged(final Configuration newConfig) {
+        // nothing.
     }
 
     @Override public View onCreateInputView() {

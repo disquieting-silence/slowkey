@@ -22,26 +22,11 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(Keyboard.KEYCODE_SHIFT, new ShiftKeyAction());
         mapping.put(Keyboard.KEYCODE_DONE, new KeycodeKeyAction(KeyEvent.KEYCODE_ENTER));
         mapping.put(SpecialKeyCodes.CHANGE_INPUT, new ChangeInputKeyAction());
-        mapping.put(SpecialKeyCodes.TO_A1, new ShowKeyboardKeyAction(A1));
-        mapping.put(SpecialKeyCodes.TO_A2, new ShowKeyboardKeyAction(A2));
-        mapping.put(SpecialKeyCodes.TO_A3, new ShowKeyboardKeyAction(A3));
-        mapping.put(SpecialKeyCodes.TO_A4, new ShowKeyboardKeyAction(A4));
-        mapping.put(SpecialKeyCodes.TO_B1, new ShowKeyboardKeyAction(B1));
-        mapping.put(SpecialKeyCodes.TO_B2, new ShowKeyboardKeyAction(B2));
-        mapping.put(SpecialKeyCodes.TO_B3, new ShowKeyboardKeyAction(B3));
-        mapping.put(SpecialKeyCodes.TO_B4, new ShowKeyboardKeyAction(B4));
-        mapping.put(SpecialKeyCodes.TO_BINARY, new ShowKeyboardKeyAction(BINARY));
-        mapping.put(SpecialKeyCodes.TO_BLUEPRINT, new ShowKeyboardKeyAction(BLUEPRINT));
         mapping.put(SpecialKeyCodes.TO_SYMBOL, new ShowKeyboardKeyAction(SYMBOL));
         mapping.put(SpecialKeyCodes.TO_NUMBER, new ShowKeyboardKeyAction(NUMBER));
-        mapping.put(SpecialKeyCodes.TO_NAV, new ShowKeyboardKeyAction(NAVIGATION));
-        mapping.put(SpecialKeyCodes.TO_COLEMAK0, new ShowKeyboardKeyAction(COLEMAK0));
-        mapping.put(SpecialKeyCodes.TO_COLEMAK1, new ShowKeyboardKeyAction(COLEMAK1));
-        mapping.put(SpecialKeyCodes.TO_COLEMAK2, new ShowKeyboardKeyAction(COLEMAK2));
-        mapping.put(SpecialKeyCodes.TO_COLEMAK_ALPHA, new ShowKeyboardKeyAction(COLEMAK_ALPHA));
+        mapping.put(SpecialKeyCodes.TO_LETTER, new ShowKeyboardKeyAction(LETTER));
         mapping.put(SpecialKeyCodes.KEYBOARD_GROW, new GrowKeyboardKeyAction());
         mapping.put(SpecialKeyCodes.KEYBOARD_SHRINK, new ShrinkKeyboardKeyAction());
-        mapping.put(SpecialKeyCodes.TO_MEGA_SYMBOLS, new ShowKeyboardKeyAction(MEGA_SYMBOLS));
     }
 
     @Override

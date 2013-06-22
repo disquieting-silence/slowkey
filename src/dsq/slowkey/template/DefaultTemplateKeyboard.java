@@ -46,6 +46,16 @@ public class DefaultTemplateKeyboard extends AbstractTemplateKeyboard implements
         updateModifiers();
     }
 
+    @Override
+    public void portrait() {
+
+    }
+
+    @Override
+    public void landscape() {
+
+    }
+
     private void updateModifiers() {
         for (Key key : keys) {
             if (key.codes.length > 0 && key.codes[0] == Keyboard.KEYCODE_SHIFT) {
