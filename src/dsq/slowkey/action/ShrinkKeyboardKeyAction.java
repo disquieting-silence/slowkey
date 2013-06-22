@@ -7,6 +7,6 @@ import dsq.slowkey.view.SlowKeyboardView;
 public class ShrinkKeyboardKeyAction implements KeyAction {
     @Override
     public void run(final SlowInputMethodService service, final SlowKeyboardView view, final Switcher keyboardSwitcher) {
-        keyboardSwitcher.adjustHeight(-0.005);
+        keyboardSwitcher.shrink();
     }
 }

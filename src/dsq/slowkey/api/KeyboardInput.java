@@ -31,9 +31,8 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
 
     @Override
     public void onConfigurationChanged(final Configuration newConfig) {
-        // FIX: I don't think I like this accessing keyboards directly like this. Need a better pipeline.
         final ScreenMode mode = newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE ? ScreenMode.LANDSCAPE : ScreenMode.PORTRAIT;
-        keyboards.setScreen(mode);
+        keyboardSwitcher.setScreen(mode);
     }
 
     @Override public View onCreateInputView() {

@@ -53,8 +53,20 @@ public class DefaultSwitcher implements Switcher {
     }
 
     @Override
-    public void adjustHeight(final double percent) {
-        keyboards.adjustHeight(percent);
+    public void shrink() {
+        keyboards.shrink();
+        refresh();
+    }
+
+    @Override
+    public void grow() {
+        keyboards.grow();
+        refresh();
+    }
+
+    @Override
+    public void setScreen(final ScreenMode mode) {
+        keyboards.setScreen(mode);
         refresh();
     }
 

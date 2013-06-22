@@ -26,9 +26,9 @@ public class TemplateKeyboards implements Keyboards {
     private ScreenMode mode = ScreenMode.PORTRAIT;
     private KeyboardType currentType = KeyboardType.LETTER;
 
-    private double keyScale = 0.09;
-    public static final double SCALE_MIN = 0.07;
-    public static final double SCALE_MAX = 0.12;
+    private final Scaler portraitScaler = new DefaultScaler(0.07, 0.12, 0.09, 0.005);
+    private final Scaler landscapeScaler = new DefaultScaler(0.10, 0.30, 0.15, 0.01);
+
     private KeyTemplate current;
 
     public TemplateKeyboards(final Window window, final Context context) {
@@ -60,12 +60,20 @@ public class TemplateKeyboards implements Keyboards {
     }
 
     private void update() {
-        keyboard.update(window, keyScale, current);
+        final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
+        keyboard.update(window, scaler.get(), current);
     }
 
     @Override
-    public void adjustHeight(final double percent) {
-        keyScale = Math.max(SCALE_MIN, Math.min(SCALE_MAX, keyScale + percent));
+    public void grow() {
+        final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
+        scaler.grow();
+        update();
+    }
+
+    public void shrink() {
+        final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
+        scaler.shrink();
         update();
     }
 
