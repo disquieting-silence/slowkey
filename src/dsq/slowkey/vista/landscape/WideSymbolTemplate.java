@@ -1,4 +1,4 @@
-package dsq.slowkey.vista.portrait;
+package dsq.slowkey.vista.landscape;
 
 import android.content.Context;
 import dsq.slowkey.action.SpecialKeyCodes;
@@ -12,38 +12,57 @@ import dsq.slowkey.vista.common.DefaultCommonTemplates;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TallSymbolTemplate implements KeyTemplate {
+public class WideSymbolTemplate implements KeyTemplate {
     private List<List<Option<KeyData>>> keys;
     private final CommonTemplates common = new DefaultCommonTemplates();
 
-    public TallSymbolTemplate(final Context context) {
+    public WideSymbolTemplate(final Context context) {
         keys = new ArrayList<List<Option<KeyData>>>();
 
         final List<Option<KeyData>> first = common.topMenu();
         keys.add(first);
 
+        /*
+          MOVE  Left Up Right Down Backspace
+          +      -   *    /    ^    %   =
+          (      )   [    ]    {    }   \
+          <      >   @    #    &    _   ;
+          !      $   ?   '    "    :    |
+          ~      `   ,   [ space ] .  Enter
+
+
+          M  +  -  *  /  ^  %  \  =  B--B
+          (  )  [  ]  {  }  <  >  ~  @  |
+          &  _  ;  !  $  ?  '  "  #  ` ~
+          :  L  U  R  D  S--S  ,  .  ...E
+
+         */
+
         final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
         second.add(common.codeLabel(SpecialKeyCodes.TO_LETTER, "ALPHA"));
-        second.add(common.codeLabel(SpecialKeyCodes.LEFT, "\u2190", true));
-        second.add(common.codeLabel(SpecialKeyCodes.UP, "\u2191", true));
-        second.add(common.codeLabel(SpecialKeyCodes.RIGHT, "\u2192", true));
-        second.add(common.codeLabel(SpecialKeyCodes.DOWN, "\u2193", true));
+        second.addAll(common.keyRow(new char[] { '+', '-', '*', '/', '^', '%', '\\', '=' }));
         second.add(common.backspaceKey(context, 2));
         second.add(new None<KeyData>());
         keys.add(second);
 
-        keys.add(common.keyRow(new char[] { '+', '-', '*', '/', '^', '%', '=' }));
-        keys.add(common.keyRow(new char[] { '(', ')', '[', ']', '{', '}', '\\'}));
-        keys.add(common.keyRow(new char[] { '<', '>', '@', '#', '&', '_', ';' }));
-        keys.add(common.keyRow(new char[] { '!', '$', '?', '\'', '"', ':', '|' }));
+        keys.add(common.keyRow(new char[] { '(', ')', '[', ']', '{', '}', '<', '>', '~', '@', '|' }));
+        keys.add(common.keyRow(new char[] { '&', '_', ';', '!', '$', '?', '\'', '"', '#', '`', '#' }));
 
         final ArrayList<Option<KeyData>> last = new ArrayList<Option<KeyData>>();
-        last.addAll(common.keyRow(new char[] { '~', '`', ',' }));
+        last.addAll(common.keyRow(new char[] { ':' }));
+        last.add(common.codeLabel(SpecialKeyCodes.LEFT, "\u2190", true));
+        last.add(common.codeLabel(SpecialKeyCodes.UP, "\u2191", true));
+        last.add(common.codeLabel(SpecialKeyCodes.RIGHT, "\u2192", true));
+        last.add(common.codeLabel(SpecialKeyCodes.DOWN, "\u2193", true));
         last.add(common.spaceKey(context, 2));
         last.add(new None<KeyData>());
+        last.add(common.keyChar(','));
         last.add(common.keyChar('.'));
+        last.add(common.keyChar('…'));
         last.add(common.enterKey(context, 1));
         keys.add(last);
+
+
     }
 
     @Override

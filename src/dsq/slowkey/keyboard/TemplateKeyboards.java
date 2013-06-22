@@ -11,6 +11,7 @@ import dsq.slowkey.template.AbstractTemplateKeyboard;
 import dsq.slowkey.template.DefaultTemplateKeyboard;
 import dsq.slowkey.vista.landscape.WideLetterTemplate;
 import dsq.slowkey.vista.landscape.WideNumberTemplate;
+import dsq.slowkey.vista.landscape.WideSymbolTemplate;
 import dsq.slowkey.vista.portrait.TallLetterTemplate;
 import dsq.slowkey.vista.portrait.TallNumberTemplate;
 import dsq.slowkey.vista.portrait.TallSymbolTemplate;
@@ -43,6 +44,7 @@ public class TemplateKeyboards implements Keyboards {
 
         landscapes = new HashMap<KeyboardType, KeyTemplate>();
         landscapes.put(KeyboardType.LETTER, new WideLetterTemplate(context));
+        landscapes.put(KeyboardType.SYMBOL, new WideSymbolTemplate(context));
         landscapes.put(KeyboardType.NUMBER, new WideNumberTemplate(context));
     }
 
