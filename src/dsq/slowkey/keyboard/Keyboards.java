@@ -7,6 +7,5 @@ public interface Keyboards {
     Option<Keyboard> get(KeyboardType type);
     void adjustHeight(double percent);
     Option<Keyboard> first();
-    void landscape();
-    void portrait();
+    void setScreen(ScreenMode mode);
 }

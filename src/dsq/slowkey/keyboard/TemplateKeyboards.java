@@ -9,6 +9,7 @@ import dsq.slowkey.data.Some;
 import dsq.slowkey.desk.KeyTemplate;
 import dsq.slowkey.template.AbstractTemplateKeyboard;
 import dsq.slowkey.template.DefaultTemplateKeyboard;
+import dsq.slowkey.vista.landscape.WideLetterTemplate;
 import dsq.slowkey.vista.portrait.TallLetterTemplate;
 import dsq.slowkey.vista.portrait.TallNumberTemplate;
 import dsq.slowkey.vista.portrait.TallSymbolTemplate;
@@ -23,6 +24,7 @@ public class TemplateKeyboards implements Keyboards {
     private final Window window;
 
     private ScreenMode mode = ScreenMode.PORTRAIT;
+    private KeyboardType currentType = KeyboardType.LETTER;
 
     private double keyScale = 0.09;
     public static final double SCALE_MIN = 0.07;
@@ -39,15 +41,15 @@ public class TemplateKeyboards implements Keyboards {
         portraits.put(KeyboardType.NUMBER, new TallNumberTemplate(context));
 
         landscapes = new HashMap<KeyboardType, KeyTemplate>();
-//        landscapes.put(KeyboardType.COLEMAK_ALPHA, new WideLetterTemplate(context));
-
-//        portraits.put()
-
+        landscapes.put(KeyboardType.LETTER, new WideLetterTemplate(context));
     }
+
     @Override
     public Option<Keyboard> get(final KeyboardType type) {
-        final KeyTemplate template = portraits.get(type);
+        final Map<KeyboardType, KeyTemplate> templates = mode == ScreenMode.PORTRAIT ? portraits : landscapes;
+        final KeyTemplate template = templates.get(type);
         if (template != null) {
+            currentType = type;
             current = template;
             update();
 
@@ -73,11 +75,9 @@ public class TemplateKeyboards implements Keyboards {
     }
 
     @Override
-    public void landscape() {
-
-    }
-
-    @Override
-    public void portrait() {
+    public void setScreen(final ScreenMode mode) {
+        this.mode = mode;
+        // FIX: Sort of a abuse of how it should work. This should return a value, but it mutates as well. Hmm.
+        get(currentType);
     }
 }

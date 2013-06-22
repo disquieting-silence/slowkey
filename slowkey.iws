@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab37b54-7173-4d6e-9954-dc845a8074cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/ScreenMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/landscape/WideLetterTemplate.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/testkey.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/sticky_row.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/a1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/a2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/a3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/a4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/b1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/b2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/b3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/b4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/binary.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/blueprint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/colemak0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/colemak1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/colemak2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/colemak_alpha.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/colemak_blueprint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/mega_symbols.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/number.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/xml/symbol.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/jrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/jrow_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/main.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/main_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/navigation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/navigation_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/number.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/number_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/qrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/qrow_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/symbol.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/symbol_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/desk/DefaultKeyDesk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/desk/KeyDesk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/ColemakKeyboards.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/DefaultDynamicKeyboard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/DynamicKeyboard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/QwertyKeyboards.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/sym_keyboard_shift.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/new_shift.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/CommonTemplates.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/common/CommonTemplates.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/DefaultCommonTemplates.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/common/DefaultCommonTemplates.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaAlphaTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallLetterTemplate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaNumberTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallNumberTemplate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/slowkey/vista/MegaSymbolTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallSymbolTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slowkey.iws" afterPath="$PROJECT_DIR$/slowkey.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/action/DefaultSpecialKeys.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/action/DefaultSpecialKeys.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/action/SpecialKeyCodes.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/action/SpecialKeyCodes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/api/KeyboardInput.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/api/KeyboardInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardType.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/Keyboards.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/Keyboards.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/template/DefaultTemplateKeyboard.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/template/DefaultTemplateKeyboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/template/TemplateKeyboard.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/template/TemplateKeyboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/slowkey/view/DefaultSlowKeyboardView.java" afterPath="$PROJECT_DIR$/src/dsq/slowkey/view/DefaultSlowKeyboardView.java" />
     </list>
     <ignored path="slowkey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,10 +62,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultCommonTemplates.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/common/DefaultCommonTemplates.java">
+      <file leaf-file-name="WideLetterTemplate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/landscape/WideLetterTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="67" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.8259912">
+            <state line="14" column="13" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultTemplateKeyboard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/template/DefaultTemplateKeyboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateKeyboards.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="5" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultSwitcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/DefaultSwitcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="35" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,73 +113,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoopKeyboardListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/api/NoopKeyboardListener.java">
+      <file leaf-file-name="KeyboardInput.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/api/KeyboardInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="33" column="8" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.26710817">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Option.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/data/Option.java">
+      <file leaf-file-name="Keyboards.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/Keyboards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="9" column="11" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeyTemplate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultKeyUpdater.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/DefaultKeyUpdater.java">
+      <file leaf-file-name="blank.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/blank.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeyData.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/KeyData.java">
+      <file leaf-file-name="method.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/method.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyboardContexts.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardContexts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyboardTransform.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardTransform.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Switcher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/Switcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -224,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/DefaultSwitcher.java" />
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/template/TemplateKeyboard.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/template/DefaultTemplateKeyboard.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/MegaNumberTemplate.java" />
@@ -233,13 +180,15 @@
         <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/ColemakKeyboards.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/view/DefaultSlowKeyboardView.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardType.java" />
-        <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/action/SpecialKeyCodes.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/action/DefaultSpecialKeys.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/MegaAlphaTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/landscape/MegaWideAlphaTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/landscape/WideLetterTemplate.java" />
         <option value="$PROJECT_DIR$/src/dsq/slowkey/vista/common/DefaultCommonTemplates.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/Keyboards.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java" />
+        <option value="$PROJECT_DIR$/src/dsq/slowkey/api/KeyboardInput.java" />
       </list>
     </option>
   </component>
@@ -842,18 +791,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28833553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263434" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263434" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.67365664" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.672346" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2856115" sideWeight="0.67365664" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2856115" sideWeight="0.672346" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -917,49 +866,82 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/DefaultKeyboardContexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/action/SpecialKeyCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/action/DefaultSpecialKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallLetterTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallNumberTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/portrait/TallSymbolTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/keyboard.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colours.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/method.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/blank.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/landscape/WideLetterTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/template/DefaultTemplateKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/DefaultSwitcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="35" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -972,65 +954,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/api/NoopKeyboardListener.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/data/Option.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/Keyboards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="9" column="11" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/KeyTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/TemplateKeyboards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="81" column="5" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/DefaultKeyUpdater.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/api/KeyboardInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/desk/KeyData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardContexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/KeyboardTransform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/keyboard/Switcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/slowkey/vista/common/DefaultCommonTemplates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="67" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.8259912">
+        <state line="33" column="8" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.26710817">
           <folding />
         </state>
       </provider>
