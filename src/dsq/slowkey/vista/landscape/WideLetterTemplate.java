@@ -18,39 +18,53 @@ public class WideLetterTemplate implements KeyTemplate {
     private final List<List<Option<KeyData>>> keys;
 
     public WideLetterTemplate(final Context context) {
+        /* Tall template
+        Mv  :
+          ( )
+         /
+
+
+        [Shift]  [Space] . enter
+         */
+
+
+        /* Wide template
+            q w e r t y u i o p [Bksp]
+            a s d f g h j k l ; ' ?
+            [Mv] z x c v b n m , . ?
+            [Shift] : ( [Space] ) / [Ret]
+         */
+
         this.keys = new ArrayList<List<Option<KeyData>>>();
 
         final List<Option<KeyData>> first = common.topMenu();
         keys.add(first);
 
         final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
-        second.add(common.codeLabel(SpecialKeyCodes.TO_SYMBOL, "MOVE"));
-        second.addAll(common.keyRow(new char[]{'z', 'x', 'q', ':', 'w', 'l', 'y', 'u', 'p', '(', ')'}));
+        second.addAll(common.keyRow(new char[]{'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p' }));
         second.add(common.backspaceKey(context, 2));
         second.add(new None<KeyData>());
         keys.add(second);
 
-//        final List<Option<KeyData>> third = common.keyRow(new char[]{'l', 'w', 'y', 'u', 'p', '(', ')'});
-//        keys.add(third);
-//
-//        final List<Option<KeyData>> fourth = common.keyRow(new char[]{'f', 'e', 'r', 't', 'i', 'o', '/'});
-//        keys.add(fourth);
-//
-//        final List<Option<KeyData>> fifth = common.keyRow(new char[]{'m', 'a', 's', 'd', 'h', 'n', '\''});
-//        keys.add(fifth);
-//
-//        final List<Option<KeyData>> sixth = common.keyRow(new char[]{'j', 'c', 'k', 'b', 'v', 'g', '?'});
-//        keys.add(sixth);
-//
-//        final ArrayList<Option<KeyData>> seventh = new ArrayList<Option<KeyData>>();
-//        seventh.add(common.shiftKey(context, 2));
-//        seventh.add(new None<KeyData>());
-//        seventh.add(common.keyChar(','));
-//        seventh.add(common.spaceKey(context, 2));
-//        seventh.add(new None<KeyData>());
-//        seventh.add(common.keyChar('.'));
-//        seventh.add(common.enterKey(context, 1));
-//        keys.add(seventh);
+        final List<Option<KeyData>> third = common.keyRow(new char[] { 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\''});
+        keys.add(third);
+
+        final List<Option<KeyData>> fourth = common.keyRow(new char[] { '(', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', ')' });
+        keys.add(fourth);
+
+        final List<Option<KeyData>> fifth = new ArrayList<Option<KeyData>>();
+        fifth.add(common.shiftKey(context, 2));
+        fifth.add(new None<KeyData>());
+        fifth.add(common.codeLabel(SpecialKeyCodes.TO_SYMBOL, "MOVE"));
+        fifth.add(common.keyChar(':'));
+        fifth.add(common.spaceKey(context, 3));
+        fifth.add(new None<KeyData>());
+        fifth.add(new None<KeyData>());
+        fifth.add(common.keyChar('/'));
+        fifth.add(new None<KeyData>());
+        fifth.add(new None<KeyData>());
+        fifth.add(common.enterKey(context, 1));
+        keys.add(fifth);
     }
 
 
@@ -61,7 +75,7 @@ public class WideLetterTemplate implements KeyTemplate {
 
     @Override
     public double getRowScale(final int row) {
-        return 1;
+        return row == 0 ? 0.5 : 1.0;
     }
 
     @Override

@@ -17,6 +17,7 @@ import java.util.List;
 
 public class DefaultTemplateKeyboard extends AbstractTemplateKeyboard implements TemplateKeyboard {
 
+    public static final int PRECISION = 3;
     private KeyGenerator generator = new DefaultKeyGenerator();
     private WindowMetrics metrics = new DefaultWindowMetrics();
     private KeyPositionCache cache = new DefaultKeyPositionCache();
@@ -38,11 +39,14 @@ public class DefaultTemplateKeyboard extends AbstractTemplateKeyboard implements
         this.totalWidth = metrics.widthPx(window, 1.0);
         int keyHeight = metrics.heightPx(window, height);
         this.keys = generator.generate(cache, this, totalWidth, keyHeight, template);
-        // Ignoring for the time being different heights for different rows.
+
         final Key lastKey = keys.size() > 0 ? keys.get(keys.size() - 1) : null;
         this.totalHeight = lastKey != null ? lastKey.y + lastKey.height : 0;
-        final int minKeyWidth = metrics.widthPx(window, 1.0 / template.maxColumns());
-        cache.update(this.keys, template.numRows(), template.maxColumns(), minKeyWidth, keyHeight);
+
+        // This is slow, but accurate.
+        final int gridsAcross = totalWidth / PRECISION;
+        final int gridsDown = totalHeight / PRECISION;
+        cache.update(this.keys, gridsDown, gridsAcross, PRECISION, PRECISION);
         updateModifiers();
     }
 

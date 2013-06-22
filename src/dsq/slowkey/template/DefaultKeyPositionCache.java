@@ -56,16 +56,10 @@ public class DefaultKeyPositionCache implements KeyPositionCache {
     }
 
     private int nearest(final List<Keyboard.Key> keys, final int x, final int y) {
-        int result = -1;
-        int best = Integer.MAX_VALUE;
         for (int i = 0; i < keys.size(); i++) {
-            Keyboard.Key key = keys.get(i);
-            final int distance = key.squaredDistanceFrom(x, y);
-            if (distance < best) {
-                best = distance;
-                result = i;
-            }
+            final Keyboard.Key key = keys.get(i);
+            if (x >= key.x && x <= key.x + key.width && y >= key.y && y <= key.y + key.height) return i;
         }
-        return result;
+        return -1;
     }
 }
