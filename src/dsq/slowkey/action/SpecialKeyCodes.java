@@ -10,6 +10,12 @@ public class SpecialKeyCodes {
     public static final int KEYBOARD_SHRINK = -20000;
     public static final int KEYBOARD_GROW = -21000;
 
+    public static final int TO_COLEMAK_TOP = -22000;
+    public static final int TO_COLEMAK_MIDDLE = -23000;
+    public static final int TO_COLEMAK_BOTTOM = -24000;
+
+    public static final int TO_KEYBOARD_LIST = -25000;
+
     public static final int LEFT = -1100;
     public static final int RIGHT = -1101;
     public static final int UP = -1102;

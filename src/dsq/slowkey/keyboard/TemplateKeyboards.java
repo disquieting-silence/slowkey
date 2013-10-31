@@ -3,6 +3,7 @@ package dsq.slowkey.keyboard;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.view.Window;
+import dsq.slowkey.action.SpecialKeyCodes;
 import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.data.Some;
@@ -12,9 +13,7 @@ import dsq.slowkey.template.DefaultTemplateKeyboard;
 import dsq.slowkey.vista.landscape.WideLetterTemplate;
 import dsq.slowkey.vista.landscape.WideNumberTemplate;
 import dsq.slowkey.vista.landscape.WideSymbolTemplate;
-import dsq.slowkey.vista.portrait.TallLetterTemplate;
-import dsq.slowkey.vista.portrait.TallNumberTemplate;
-import dsq.slowkey.vista.portrait.TallSymbolTemplate;
+import dsq.slowkey.vista.portrait.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,6 +40,10 @@ public class TemplateKeyboards implements Keyboards {
         portraits.put(KeyboardType.LETTER, new TallLetterTemplate(context));
         portraits.put(KeyboardType.SYMBOL, new TallSymbolTemplate(context));
         portraits.put(KeyboardType.NUMBER, new TallNumberTemplate(context));
+        portraits.put(KeyboardType.TOP_ROW, new ColemakTopTemplate(context));
+        portraits.put(KeyboardType.MIDDLE_ROW, new ColemakMiddleTemplate(context));
+        portraits.put(KeyboardType.BOTTOM_ROW, new ColemakBottomTemplate(context));
+        portraits.put(KeyboardType.KEYBOARD_LIST, new KeyboardListTemplate(context, SpecialKeyCodes.TO_SYMBOL, "SYMBOLS"));
 
         landscapes = new HashMap<KeyboardType, KeyTemplate>();
         landscapes.put(KeyboardType.LETTER, new WideLetterTemplate(context));

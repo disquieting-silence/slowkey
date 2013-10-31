@@ -98,8 +98,10 @@ public class DefaultCommonTemplates implements CommonTemplates {
         menu.add(codeLabel(KEYBOARD_GROW, "<->"));
         menu.add(codeLabel(KEYBOARD_SHRINK, ">-<"));
         menu.add(codeLabel(Keyboard.KEYCODE_CANCEL, "HIDE"));
-        menu.add(codeLabel(SpecialKeyCodes.CHANGE_INPUT, "INPUT"));
+        menu.add(codeLabel(SpecialKeyCodes.TO_KEYBOARD_LIST, "\u21d3"));
+        //menu.add(codeLabel(SpecialKeyCodes.CHANGE_INPUT, "INPUT"));
         menu.add(codeLabel(SpecialKeyCodes.TO_NUMBER, "0…9"));
+
         return menu;
     }
 
