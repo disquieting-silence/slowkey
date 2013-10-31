@@ -8,5 +8,8 @@ public interface Switcher {
     void shrink();
     void grow();
 
+    void growMax();
+    void shrinkMax();
+
     void setScreen(ScreenMode mode);
 }

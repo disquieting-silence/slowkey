@@ -29,8 +29,11 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.TO_COLEMAK_MIDDLE, new ShowKeyboardKeyAction(MIDDLE_ROW));
         mapping.put(SpecialKeyCodes.TO_COLEMAK_BOTTOM, new ShowKeyboardKeyAction(BOTTOM_ROW));
         mapping.put(SpecialKeyCodes.TO_KEYBOARD_LIST, new ShowKeyboardKeyAction(KEYBOARD_LIST));
+        mapping.put(SpecialKeyCodes.TO_SCALE_KEYBOARD, new ShowKeyboardKeyAction(SCALE_KEYBOARD));
         mapping.put(SpecialKeyCodes.KEYBOARD_GROW, new GrowKeyboardKeyAction());
         mapping.put(SpecialKeyCodes.KEYBOARD_SHRINK, new ShrinkKeyboardKeyAction());
+        mapping.put(SpecialKeyCodes.KEYBOARD_MAX, new GrowMaxKeyboardKeyAction());
+        mapping.put(SpecialKeyCodes.KEYBOARD_MIN, new ShrinkMaxKeyboardKeyAction());
     }
 
     @Override

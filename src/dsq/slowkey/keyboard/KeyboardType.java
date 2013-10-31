@@ -9,5 +9,6 @@ public enum KeyboardType {
     MIDDLE_ROW,
     BOTTOM_ROW,
 
-    KEYBOARD_LIST
+    KEYBOARD_LIST,
+    SCALE_KEYBOARD
 }

@@ -55,7 +55,7 @@ public class TallNumberTemplate implements KeyTemplate {
 
     @Override
     public double getRowScale(final int row) {
-        return 1;
+        return row == 0 ? 0.5 : 1.0;
     }
 
     @Override

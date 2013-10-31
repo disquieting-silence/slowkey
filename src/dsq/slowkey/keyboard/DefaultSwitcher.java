@@ -65,6 +65,18 @@ public class DefaultSwitcher implements Switcher {
     }
 
     @Override
+    public void growMax() {
+        keyboards.growMax();
+        refresh();
+    }
+
+    @Override
+    public void shrinkMax() {
+        keyboards.shrinkMax();
+        refresh();
+    }
+
+    @Override
     public void setScreen(final ScreenMode mode) {
         keyboards.setScreen(mode);
         refresh();

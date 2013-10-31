@@ -28,4 +28,14 @@ public class DefaultScaler implements Scaler {
     public double get() {
         return value;
     }
+
+    @Override
+    public void growMax() {
+        value = max;
+    }
+
+    @Override
+    public void shrinkMax() {
+        value = min;
+    }
 }

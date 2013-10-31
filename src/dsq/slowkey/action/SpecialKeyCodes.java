@@ -15,6 +15,9 @@ public class SpecialKeyCodes {
     public static final int TO_COLEMAK_BOTTOM = -24000;
 
     public static final int TO_KEYBOARD_LIST = -25000;
+    public static final int TO_SCALE_KEYBOARD = -26000;
+    public static final int KEYBOARD_MIN = -26100;
+    public static final int KEYBOARD_MAX = -26200;
 
     public static final int LEFT = -1100;
     public static final int RIGHT = -1101;

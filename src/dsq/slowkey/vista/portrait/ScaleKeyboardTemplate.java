@@ -12,30 +12,31 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class KeyboardListTemplate implements KeyTemplate {
+import static dsq.slowkey.action.SpecialKeyCodes.KEYBOARD_GROW;
+import static dsq.slowkey.action.SpecialKeyCodes.KEYBOARD_SHRINK;
+
+public class ScaleKeyboardTemplate implements KeyTemplate {
     private final CommonTemplates common = new DefaultCommonTemplates();
 
     private final List<List<Option<KeyData>>> keys;
 
-    public KeyboardListTemplate(final Context context) {
+    public ScaleKeyboardTemplate(final Context context) {
         this.keys = new ArrayList<List<Option<KeyData>>>();
 
         final List<Option<KeyData>> first = common.topMenu();
         keys.add(first);
 
         keys.addAll(Arrays.asList(
-                row(SpecialKeyCodes.TO_SYMBOL, "SYMBOLS"),
-                row(SpecialKeyCodes.TO_LETTER, "ALPHABET"),
-                row(SpecialKeyCodes.TO_NUMBER, "NUMBERS"),
-                row(SpecialKeyCodes.TO_COLEMAK_MIDDLE, "COMPRESSED"),
-                row(SpecialKeyCodes.CHANGE_INPUT, "PICKER")
+            row(SpecialKeyCodes.KEYBOARD_GROW, "+", SpecialKeyCodes.KEYBOARD_SHRINK, "-"),
+            row(SpecialKeyCodes.KEYBOARD_MAX, "MAX", SpecialKeyCodes.KEYBOARD_MIN, "MIN")
         ));
     }
 
-    private List<Option<KeyData>> row(final int code, final String label) {
-        final List<Option<KeyData>> second = new ArrayList<Option<KeyData>>();
-        second.add(common.codeLabel(code, label));
-        return second;
+    private List<Option<KeyData>> row(final int code1, final String label1, final int code2, final String label2) {
+        final List<Option<KeyData>> r = new ArrayList<Option<KeyData>>();
+        r.add(common.codeLabel(code1, label1));
+        r.add(common.codeLabel(code2, label2));
+        return r;
     }
 
     @Override

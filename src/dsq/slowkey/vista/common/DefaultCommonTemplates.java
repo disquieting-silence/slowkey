@@ -15,9 +15,9 @@ import java.util.List;
 
 import static android.inputmethodservice.Keyboard.KEYCODE_DELETE;
 import static android.inputmethodservice.Keyboard.KEYCODE_SHIFT;
-//import static dsq.slowkey.R.drawable.*;
-import static dsq.slowkey.action.SpecialKeyCodes.KEYBOARD_GROW;
 import static dsq.slowkey.action.SpecialKeyCodes.KEYBOARD_SHRINK;
+
+//import static dsq.slowkey.R.drawable.*;
 
 public class DefaultCommonTemplates implements CommonTemplates {
     private Option<String> noLabel = new None<String>();
@@ -95,13 +95,9 @@ public class DefaultCommonTemplates implements CommonTemplates {
     @Override
     public List<Option<KeyData>> topMenu() {
         final List<Option<KeyData>> menu = new ArrayList<Option<KeyData>>();
-        menu.add(codeLabel(KEYBOARD_GROW, "<->"));
-        menu.add(codeLabel(KEYBOARD_SHRINK, ">-<"));
+        menu.add(codeLabel(SpecialKeyCodes.TO_SCALE_KEYBOARD, "SCALE"));
         menu.add(codeLabel(Keyboard.KEYCODE_CANCEL, "HIDE"));
         menu.add(codeLabel(SpecialKeyCodes.TO_KEYBOARD_LIST, "\u21d3"));
-        //menu.add(codeLabel(SpecialKeyCodes.CHANGE_INPUT, "INPUT"));
-        menu.add(codeLabel(SpecialKeyCodes.TO_NUMBER, "0…9"));
-
         return menu;
     }
 

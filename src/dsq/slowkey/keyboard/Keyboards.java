@@ -10,4 +10,7 @@ public interface Keyboards {
 
     void shrink();
     void grow();
+
+    void shrinkMax();
+    void growMax();
 }

@@ -3,7 +3,6 @@ package dsq.slowkey.keyboard;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.view.Window;
-import dsq.slowkey.action.SpecialKeyCodes;
 import dsq.slowkey.data.None;
 import dsq.slowkey.data.Option;
 import dsq.slowkey.data.Some;
@@ -43,7 +42,8 @@ public class TemplateKeyboards implements Keyboards {
         portraits.put(KeyboardType.TOP_ROW, new ColemakTopTemplate(context));
         portraits.put(KeyboardType.MIDDLE_ROW, new ColemakMiddleTemplate(context));
         portraits.put(KeyboardType.BOTTOM_ROW, new ColemakBottomTemplate(context));
-        portraits.put(KeyboardType.KEYBOARD_LIST, new KeyboardListTemplate(context, SpecialKeyCodes.TO_SYMBOL, "SYMBOLS"));
+        portraits.put(KeyboardType.KEYBOARD_LIST, new KeyboardListTemplate(context));
+        portraits.put(KeyboardType.SCALE_KEYBOARD, new ScaleKeyboardTemplate(context));
 
         landscapes = new HashMap<KeyboardType, KeyTemplate>();
         landscapes.put(KeyboardType.LETTER, new WideLetterTemplate(context));
@@ -75,6 +75,20 @@ public class TemplateKeyboards implements Keyboards {
     public void grow() {
         final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
         scaler.grow();
+        update();
+    }
+
+    @Override
+    public void shrinkMax() {
+        final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
+        scaler.shrinkMax();
+        update();
+    }
+
+    @Override
+    public void growMax() {
+        final Scaler scaler = mode == ScreenMode.LANDSCAPE ? landscapeScaler : portraitScaler;
+        scaler.growMax();
         update();
     }
 
