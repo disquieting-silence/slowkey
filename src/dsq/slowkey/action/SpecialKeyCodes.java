@@ -5,6 +5,7 @@ public class SpecialKeyCodes {
     public static final int TO_SYMBOL = -16000;
     public static final int TO_NUMBER = -10000;
     public static final int TO_LETTER = -15000;
+    public static final int TO_INTERNATIONAL = -18000;
     public static final int CHANGE_INPUT = -17000;
 
     public static final int KEYBOARD_SHRINK = -20000;

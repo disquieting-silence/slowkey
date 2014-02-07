@@ -28,6 +28,7 @@ public class KeyboardListTemplate implements KeyTemplate {
                 row(SpecialKeyCodes.TO_LETTER, "ALPHABET"),
                 row(SpecialKeyCodes.TO_NUMBER, "NUMBERS"),
                 row(SpecialKeyCodes.TO_COLEMAK_MIDDLE, "COMPRESSED"),
+                row(SpecialKeyCodes.TO_INTERNATIONAL, "INTERNATIONAL"),
                 row(SpecialKeyCodes.CHANGE_INPUT, "PICKER")
         ));
     }

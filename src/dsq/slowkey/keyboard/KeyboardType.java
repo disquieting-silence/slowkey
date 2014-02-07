@@ -4,6 +4,7 @@ public enum KeyboardType {
     LETTER,
     NUMBER,
     SYMBOL,
+    INTERNATIONAL,
 
     TOP_ROW,
     MIDDLE_ROW,

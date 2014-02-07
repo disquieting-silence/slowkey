@@ -44,6 +44,7 @@ public class TemplateKeyboards implements Keyboards {
         portraits.put(KeyboardType.BOTTOM_ROW, new ColemakBottomTemplate(context));
         portraits.put(KeyboardType.KEYBOARD_LIST, new KeyboardListTemplate(context));
         portraits.put(KeyboardType.SCALE_KEYBOARD, new ScaleKeyboardTemplate(context));
+        portraits.put(KeyboardType.INTERNATIONAL, new TallInternationalTemplate(context));
 
         landscapes = new HashMap<KeyboardType, KeyTemplate>();
         landscapes.put(KeyboardType.LETTER, new WideLetterTemplate(context));

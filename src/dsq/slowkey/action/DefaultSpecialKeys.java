@@ -2,6 +2,7 @@ package dsq.slowkey.action;
 
 import android.inputmethodservice.Keyboard;
 import android.view.KeyEvent;
+import dsq.slowkey.keyboard.KeyboardType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +26,7 @@ public class DefaultSpecialKeys implements SpecialKeys {
         mapping.put(SpecialKeyCodes.TO_SYMBOL, new ShowKeyboardKeyAction(SYMBOL));
         mapping.put(SpecialKeyCodes.TO_NUMBER, new ShowKeyboardKeyAction(NUMBER));
         mapping.put(SpecialKeyCodes.TO_LETTER, new ShowKeyboardKeyAction(LETTER));
+        mapping.put(SpecialKeyCodes.TO_INTERNATIONAL, new ShowKeyboardKeyAction(KeyboardType.INTERNATIONAL));
         mapping.put(SpecialKeyCodes.TO_COLEMAK_TOP, new ShowKeyboardKeyAction(TOP_ROW));
         mapping.put(SpecialKeyCodes.TO_COLEMAK_MIDDLE, new ShowKeyboardKeyAction(MIDDLE_ROW));
         mapping.put(SpecialKeyCodes.TO_COLEMAK_BOTTOM, new ShowKeyboardKeyAction(BOTTOM_ROW));
