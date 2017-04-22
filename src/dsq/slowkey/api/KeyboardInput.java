@@ -32,7 +32,7 @@ public class KeyboardInput extends InputMethodService implements SlowInputMethod
     @Override
     public void onConfigurationChanged(final Configuration newConfig) {
         final ScreenMode mode = newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE ? ScreenMode.LANDSCAPE : ScreenMode.PORTRAIT;
-        keyboardSwitcher.setScreen(mode);
+        if (keyboardSwitcher != null) keyboardSwitcher.setScreen(mode);
     }
 
     @Override public View onCreateInputView() {
